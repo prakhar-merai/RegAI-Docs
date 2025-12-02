@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Design Output API - Regulatory AI Docs</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../../css/brands.min.css" rel="stylesheet">
+        <link href="../../../css/solid.min.css" rel="stylesheet">
+        <link href="../../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <link href="../../../assets/_mkdocstrings.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">Regulatory AI Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../../getting-started/" class="nav-link">Getting Started</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">API Reference</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../design_template/template_api/" class="dropdown-item">Design Template API</a>
+</li>
+                                    
+<li>
+    <a href="../../gspr_table/gspr_table_api/" class="dropdown-item">GSPR Table API</a>
+</li>
+                                    
+<li>
+    <a href="../../design_input/design_input/" class="dropdown-item">Design Input API</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Design Output API</a>
+</li>
+                                    
+<li>
+    <a href="../../projects/projects_api/" class="dropdown-item">Projects API</a>
+</li>
+                                    
+<li>
+    <a href="../../session/session_api/" class="dropdown-item">Sessions API</a>
+</li>
+                                    
+<li>
+    <a href="../../other_api/other_api/" class="dropdown-item">Other APIs</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Database & Schemas</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../database_and_schemas/databases_overview/" class="dropdown-item">Databases Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../../database_and_schemas/schemas/" class="dropdown-item">APIs Response Schemas</a>
+</li>
+                                    
+<li>
+    <a href="../../../database_and_schemas/other/" class="dropdown-item">Other</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">AI Backend</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../ai_backend/chains_overview/" class="dropdown-item">Chains Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../../ai_backend/agents/" class="dropdown-item">Workflows Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../../ai_backend/graphs/" class="dropdown-item">Graph Nodes</a>
+</li>
+                                    
+<li>
+    <a href="../../../ai_backend/output_models/" class="dropdown-item">Output Models</a>
+</li>
+                                    
+<li>
+    <a href="../../../ai_backend/prompts/" class="dropdown-item">Prompts</a>
+</li>
+                                    
+<li>
+    <a href="../../../ai_backend/others/" class="dropdown-item">Other Modules</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../../faq/" class="nav-link">FAQ</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../../design_input/design_input/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../../projects/projects_api/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="2"><a href="#design-output-api-generate-regulatory-design-artifacts" class="nav-link">🧩 Design Output API — Generate Regulatory Design Artifacts</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#app.api.routes.v1.design_output.design_output" class="nav-link">design_output</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#app.api.routes.v1.design_output.design_output.post_design_output" class="nav-link">post_design_output</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<hr />
+<h2 id="design-output-api-generate-regulatory-design-artifacts">🧩 Design Output API — Generate Regulatory Design Artifacts</h2>
+<p>Responsible for compiling, formatting, and delivering structured design-stage outputs throughout the regulatory pipeline.<br />
+This module converts processed insights into <strong>clear, validated, and compliant</strong> documentation ready for downstream review. </p>
+
+
+<div class="doc doc-object doc-module">
+
+
+
+<a id="app.api.routes.v1.design_output.design_output"></a>
+    <div class="doc doc-contents first">
+
+        <p>Design Output API Routes</p>
+<p>This module provides REST API endpoints for generating design outputs in the regulatory AI system.
+Design outputs are structured reports that transform design input requirements into specific,
+measurable outputs that demonstrate compliance with medical device regulatory standards.</p>
+<p>The module handles:
+- Processing design output requests for selected components
+- Filtering and validating user-selected design inputs
+- Integration with the design output processing node using LangGraph
+- Session-based state management for design output generation
+- Automatic referencing of relevant ISO/IEC standards
+- Generation of structured design output reports</p>
+<p>Key Features:
+- Selective component processing based on user selection
+- Comprehensive error handling and logging
+- Integration with regulatory standards databases
+- Asynchronous processing for improved performance</p>
+
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+<h2 id="app.api.routes.v1.design_output.design_output.post_design_output" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">post_design_output</span><span class="p">(</span><span class="n">session_id</span><span class="p">,</span> <span class="n">request</span><span class="p">)</span></code>
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h2>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Generate a structured Design Output Report for selected design inputs in a session.</p>
+<p>This endpoint processes user-selected design input components and generates comprehensive
+design outputs that demonstrate compliance with medical device regulatory standards.
+The system automatically references relevant ISO/IEC standards and creates structured
+reports suitable for regulatory submissions.</p>
+<p>Workflow:
+1. Retrieves the active session and validates its existence
+2. Filters design inputs based on user selection or processes all if none specified
+3. Validates that selected components exist in the session
+4. Generates design outputs using the LangGraph processing chain
+5. Updates session state with generated outputs
+6. Returns structured design output response</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>session_id</code>
+            </td>
+            <td>
+                  <code><span title="str">str</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Unique identifier for the session containing design inputs</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>request</code>
+            </td>
+            <td>
+                  <code><span title="regulatory.app.models.design_output.DesignOutputRequest">DesignOutputRequest</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Request object containing:
+- selected_components (Optional[List[str]]): List of component names to process.
+  If not provided, all available components will be processed.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+<th>Name</th>          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+<td><code>DesignOutputResponse</code></td>            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Structured response containing:
+- session_id (str): The session identifier
+- output (dict): Generated design output data with detailed specifications,
+  compliance information, and referenced standards</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+<p><span class="doc-section-title">Raises:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                  <code><span title="fastapi.HTTPException">HTTPException</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <ul>
+<li>404 if session is not found</li>
+<li>400 if no design inputs found in session</li>
+<li>400 if no valid components selected for processing</li>
+<li>500 if design output generation fails due to internal errors</li>
+</ul>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+<details class="example" open>
+  <summary>Example</summary>
+  <p>POST /devices/design-output/session123
+{
+    "selected_components": ["sensor", "actuator"]
+}</p>
+<p>Response:
+{
+    "session_id": "session123",
+    "output": {
+        "sensor": {...},
+        "actuator": {...}
+    }
+}</p>
+</details>
+
+<details class="note" open>
+  <summary>Note</summary>
+  <ul>
+<li>The function processes only user-selected components for targeted output generation</li>
+<li>All generated outputs automatically reference relevant ISO/IEC standards</li>
+<li>Session state is persistently updated with generated design outputs</li>
+<li>Comprehensive logging is provided for debugging and audit purposes</li>
+</ul>
+</details>
+
+            <details class="mkdocstrings-source">
+              <summary>Source code in <code>app/api/routes/v1/design_output/design_output.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 40</span>
+<span class="normal"> 41</span>
+<span class="normal"> 42</span>
+<span class="normal"> 43</span>
+<span class="normal"> 44</span>
+<span class="normal"> 45</span>
+<span class="normal"> 46</span>
+<span class="normal"> 47</span>
+<span class="normal"> 48</span>
+<span class="normal"> 49</span>
+<span class="normal"> 50</span>
+<span class="normal"> 51</span>
+<span class="normal"> 52</span>
+<span class="normal"> 53</span>
+<span class="normal"> 54</span>
+<span class="normal"> 55</span>
+<span class="normal"> 56</span>
+<span class="normal"> 57</span>
+<span class="normal"> 58</span>
+<span class="normal"> 59</span>
+<span class="normal"> 60</span>
+<span class="normal"> 61</span>
+<span class="normal"> 62</span>
+<span class="normal"> 63</span>
+<span class="normal"> 64</span>
+<span class="normal"> 65</span>
+<span class="normal"> 66</span>
+<span class="normal"> 67</span>
+<span class="normal"> 68</span>
+<span class="normal"> 69</span>
+<span class="normal"> 70</span>
+<span class="normal"> 71</span>
+<span class="normal"> 72</span>
+<span class="normal"> 73</span>
+<span class="normal"> 74</span>
+<span class="normal"> 75</span>
+<span class="normal"> 76</span>
+<span class="normal"> 77</span>
+<span class="normal"> 78</span>
+<span class="normal"> 79</span>
+<span class="normal"> 80</span>
+<span class="normal"> 81</span>
+<span class="normal"> 82</span>
+<span class="normal"> 83</span>
+<span class="normal"> 84</span>
+<span class="normal"> 85</span>
+<span class="normal"> 86</span>
+<span class="normal"> 87</span>
+<span class="normal"> 88</span>
+<span class="normal"> 89</span>
+<span class="normal"> 90</span>
+<span class="normal"> 91</span>
+<span class="normal"> 92</span>
+<span class="normal"> 93</span>
+<span class="normal"> 94</span>
+<span class="normal"> 95</span>
+<span class="normal"> 96</span>
+<span class="normal"> 97</span>
+<span class="normal"> 98</span>
+<span class="normal"> 99</span>
+<span class="normal">100</span>
+<span class="normal">101</span>
+<span class="normal">102</span>
+<span class="normal">103</span>
+<span class="normal">104</span>
+<span class="normal">105</span>
+<span class="normal">106</span>
+<span class="normal">107</span>
+<span class="normal">108</span>
+<span class="normal">109</span>
+<span class="normal">110</span>
+<span class="normal">111</span>
+<span class="normal">112</span>
+<span class="normal">113</span>
+<span class="normal">114</span>
+<span class="normal">115</span>
+<span class="normal">116</span>
+<span class="normal">117</span>
+<span class="normal">118</span>
+<span class="normal">119</span>
+<span class="normal">120</span>
+<span class="normal">121</span>
+<span class="normal">122</span>
+<span class="normal">123</span>
+<span class="normal">124</span>
+<span class="normal">125</span>
+<span class="normal">126</span>
+<span class="normal">127</span>
+<span class="normal">128</span>
+<span class="normal">129</span>
+<span class="normal">130</span>
+<span class="normal">131</span>
+<span class="normal">132</span>
+<span class="normal">133</span>
+<span class="normal">134</span>
+<span class="normal">135</span>
+<span class="normal">136</span>
+<span class="normal">137</span>
+<span class="normal">138</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@router</span><span class="o">.</span><span class="n">post</span><span class="p">(</span>
+    <span class="s2">&quot;/design-output/</span><span class="si">{session_id}</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="n">response_model</span><span class="o">=</span><span class="n">DesignOutputResponse</span><span class="p">,</span>
+    <span class="n">status_code</span><span class="o">=</span><span class="n">status</span><span class="o">.</span><span class="n">HTTP_200_OK</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">post_design_output</span><span class="p">(</span><span class="n">session_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">request</span><span class="p">:</span> <span class="n">DesignOutputRequest</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Generate a structured Design Output Report for selected design inputs in a session.</span>
+
+<span class="sd">    This endpoint processes user-selected design input components and generates comprehensive</span>
+<span class="sd">    design outputs that demonstrate compliance with medical device regulatory standards.</span>
+<span class="sd">    The system automatically references relevant ISO/IEC standards and creates structured</span>
+<span class="sd">    reports suitable for regulatory submissions.</span>
+
+<span class="sd">    Workflow:</span>
+<span class="sd">    1. Retrieves the active session and validates its existence</span>
+<span class="sd">    2. Filters design inputs based on user selection or processes all if none specified</span>
+<span class="sd">    3. Validates that selected components exist in the session</span>
+<span class="sd">    4. Generates design outputs using the LangGraph processing chain</span>
+<span class="sd">    5. Updates session state with generated outputs</span>
+<span class="sd">    6. Returns structured design output response</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        session_id (str): Unique identifier for the session containing design inputs</span>
+<span class="sd">        request (DesignOutputRequest): Request object containing:</span>
+<span class="sd">            - selected_components (Optional[List[str]]): List of component names to process.</span>
+<span class="sd">              If not provided, all available components will be processed.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        DesignOutputResponse: Structured response containing:</span>
+<span class="sd">            - session_id (str): The session identifier</span>
+<span class="sd">            - output (dict): Generated design output data with detailed specifications,</span>
+<span class="sd">              compliance information, and referenced standards</span>
+
+<span class="sd">    Raises:</span>
+<span class="sd">        HTTPException:</span>
+<span class="sd">            - 404 if session is not found</span>
+<span class="sd">            - 400 if no design inputs found in session</span>
+<span class="sd">            - 400 if no valid components selected for processing</span>
+<span class="sd">            - 500 if design output generation fails due to internal errors</span>
+
+<span class="sd">    Example:</span>
+<span class="sd">        POST /devices/design-output/session123</span>
+<span class="sd">        {</span>
+<span class="sd">            &quot;selected_components&quot;: [&quot;sensor&quot;, &quot;actuator&quot;]</span>
+<span class="sd">        }</span>
+
+<span class="sd">        Response:</span>
+<span class="sd">        {</span>
+<span class="sd">            &quot;session_id&quot;: &quot;session123&quot;,</span>
+<span class="sd">            &quot;output&quot;: {</span>
+<span class="sd">                &quot;sensor&quot;: {...},</span>
+<span class="sd">                &quot;actuator&quot;: {...}</span>
+<span class="sd">            }</span>
+<span class="sd">        }</span>
+
+<span class="sd">    Note:</span>
+<span class="sd">        - The function processes only user-selected components for targeted output generation</span>
+<span class="sd">        - All generated outputs automatically reference relevant ISO/IEC standards</span>
+<span class="sd">        - Session state is persistently updated with generated design outputs</span>
+<span class="sd">        - Comprehensive logging is provided for debugging and audit purposes</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1"># --- Step 1: Retrieve the active session ---</span>
+    <span class="n">state</span> <span class="o">=</span> <span class="n">session_manager</span><span class="o">.</span><span class="n">get_session</span><span class="p">(</span><span class="n">session_id</span><span class="p">)</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">state</span><span class="p">:</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Session &#39;</span><span class="si">{</span><span class="n">session_id</span><span class="si">}</span><span class="s2">&#39; not found.&quot;</span><span class="p">)</span>
+        <span class="k">raise</span> <span class="n">HTTPException</span><span class="p">(</span><span class="n">status_code</span><span class="o">=</span><span class="mi">404</span><span class="p">,</span> <span class="n">detail</span><span class="o">=</span><span class="s2">&quot;Session not found&quot;</span><span class="p">)</span>
+
+    <span class="c1"># --- Step 2: Filter only user-selected design inputs ---</span>
+    <span class="n">design_inputs</span> <span class="o">=</span> <span class="n">state</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;design_input&quot;</span><span class="p">,</span> <span class="p">{})</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">design_inputs</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="n">HTTPException</span><span class="p">(</span><span class="n">status_code</span><span class="o">=</span><span class="mi">400</span><span class="p">,</span> <span class="n">detail</span><span class="o">=</span><span class="s2">&quot;No design input found in session&quot;</span><span class="p">)</span>
+
+    <span class="n">selected_components</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">selected_components</span> <span class="ow">or</span> <span class="nb">list</span><span class="p">(</span><span class="n">design_inputs</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+    <span class="n">filtered_inputs</span> <span class="o">=</span> <span class="p">{</span><span class="n">comp</span><span class="p">:</span> <span class="n">design_inputs</span><span class="p">[</span><span class="n">comp</span><span class="p">]</span> <span class="k">for</span> <span class="n">comp</span> <span class="ow">in</span> <span class="n">selected_components</span> <span class="k">if</span> <span class="n">comp</span> <span class="ow">in</span> <span class="n">design_inputs</span><span class="p">}</span>
+
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">filtered_inputs</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="n">HTTPException</span><span class="p">(</span><span class="n">status_code</span><span class="o">=</span><span class="mi">400</span><span class="p">,</span> <span class="n">detail</span><span class="o">=</span><span class="s2">&quot;No valid components selected for output generation&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Update session state</span>
+    <span class="n">state</span><span class="p">[</span><span class="s2">&quot;design_input&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">filtered_inputs</span>
+
+    <span class="c1"># --- Step 3: Generate design outputs using the LangGraph chain ---</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">state</span> <span class="o">=</span> <span class="k">await</span> <span class="n">design_output_node</span><span class="p">(</span><span class="n">state</span><span class="o">=</span><span class="n">state</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">exception</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Error generating design output for session &#39;</span><span class="si">{</span><span class="n">session_id</span><span class="si">}</span><span class="s2">&#39;: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">raise</span> <span class="n">HTTPException</span><span class="p">(</span><span class="n">status_code</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span> <span class="n">detail</span><span class="o">=</span><span class="s2">&quot;Design Output generation failed&quot;</span><span class="p">)</span>
+
+    <span class="c1"># --- Step 4: Save updated session ---</span>
+    <span class="n">session_manager</span><span class="o">.</span><span class="n">update_session</span><span class="p">(</span><span class="n">session_id</span><span class="p">,</span> <span class="n">state</span><span class="p">)</span>
+    <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;✅ Design Output successfully generated for session &#39;</span><span class="si">{</span><span class="n">session_id</span><span class="si">}</span><span class="s2">&#39;&quot;</span><span class="p">)</span>
+
+    <span class="c1"># --- Step 5: Return structured response ---</span>
+    <span class="k">return</span> <span class="n">DesignOutputResponse</span><span class="p">(</span>
+        <span class="n">session_id</span><span class="o">=</span><span class="n">session_id</span><span class="p">,</span>
+        <span class="n">output</span><span class="o">=</span><span class="n">state</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;design_output&quot;</span><span class="p">,</span> <span class="p">{}),</span>
+    <span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+
+
+  </div>
+
+    </div>
+
+</div><hr /></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js"></script>
+        <script src="../../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

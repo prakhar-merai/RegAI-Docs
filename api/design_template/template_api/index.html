@@ -1,0 +1,2341 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Design Template API - Regulatory AI Docs</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../../css/brands.min.css" rel="stylesheet">
+        <link href="../../../css/solid.min.css" rel="stylesheet">
+        <link href="../../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <link href="../../../assets/_mkdocstrings.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">Regulatory AI Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../../getting-started/" class="nav-link">Getting Started</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">API Reference</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Design Template API</a>
+</li>
+                                    
+<li>
+    <a href="../../gspr_table/gspr_table_api/" class="dropdown-item">GSPR Table API</a>
+</li>
+                                    
+<li>
+    <a href="../../design_input/design_input/" class="dropdown-item">Design Input API</a>
+</li>
+                                    
+<li>
+    <a href="../../design_output/design_output/" class="dropdown-item">Design Output API</a>
+</li>
+                                    
+<li>
+    <a href="../../projects/projects_api/" class="dropdown-item">Projects API</a>
+</li>
+                                    
+<li>
+    <a href="../../session/session_api/" class="dropdown-item">Sessions API</a>
+</li>
+                                    
+<li>
+    <a href="../../other_api/other_api/" class="dropdown-item">Other APIs</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Database & Schemas</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../database_and_schemas/databases_overview/" class="dropdown-item">Databases Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../../database_and_schemas/schemas/" class="dropdown-item">APIs Response Schemas</a>
+</li>
+                                    
+<li>
+    <a href="../../../database_and_schemas/other/" class="dropdown-item">Other</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">AI Backend</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../ai_backend/chains_overview/" class="dropdown-item">Chains Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../../ai_backend/agents/" class="dropdown-item">Workflows Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../../ai_backend/graphs/" class="dropdown-item">Graph Nodes</a>
+</li>
+                                    
+<li>
+    <a href="../../../ai_backend/output_models/" class="dropdown-item">Output Models</a>
+</li>
+                                    
+<li>
+    <a href="../../../ai_backend/prompts/" class="dropdown-item">Prompts</a>
+</li>
+                                    
+<li>
+    <a href="../../../ai_backend/others/" class="dropdown-item">Other Modules</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../../faq/" class="nav-link">FAQ</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../../../getting-started/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../../gspr_table/gspr_table_api/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#api-reference" class="nav-link">🧩 API Reference</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#device-suggestions-api-generate-intelligent-recommendations" class="nav-link">💡 Device Suggestions API — Generate Intelligent Recommendations</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#app.api.routes.v1.design_template.device_suggestions" class="nav-link">device_suggestions</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#app.api.routes.v1.design_template.device_suggestions.suggest_devices" class="nav-link">suggest_devices</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#intended-user-api-manage-user-profiles" class="nav-link">👤 Intended User API — Manage User Profiles</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#app.api.routes.v1.design_template.intended_user" class="nav-link">intended_user</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#app.api.routes.v1.design_template.intended_user.get_intended" class="nav-link">get_intended</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#app.api.routes.v1.design_template.intended_user.post_intended" class="nav-link">post_intended</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#recommender-api-predict-classifications" class="nav-link">🧠 Recommender API — Predict Classifications</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#app.api.routes.v1.design_template.recommender" class="nav-link">recommender</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#app.api.routes.v1.design_template.recommender.get_component" class="nav-link">get_component</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#app.api.routes.v1.design_template.recommender.update_component" class="nav-link">update_component</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#risk-assessment-api-evaluate-device-risk" class="nav-link">⚠️ Risk Assessment API — Evaluate Device Risk</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#app.api.routes.v1.design_template.risk" class="nav-link">risk</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#app.api.routes.v1.design_template.risk.get_risk" class="nav-link">get_risk</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#app.api.routes.v1.design_template.risk.post_risk" class="nav-link">post_risk</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="api-reference">🧩 API Reference</h1>
+<p>Welcome to the <strong>Regulatory AI API Documentation</strong>.<br />
+Below you’ll find detailed references for all available API endpoints in the <code>design_template</code> module.</p>
+<hr />
+<h2 id="device-suggestions-api-generate-intelligent-recommendations">💡 Device Suggestions API — Generate Intelligent Recommendations</h2>
+<p>Generates AI-based suggestions for medical device components, categories, or materials<br />
+based on existing session data and specifications.</p>
+
+
+<div class="doc doc-object doc-module">
+
+
+
+<a id="app.api.routes.v1.design_template.device_suggestions"></a>
+    <div class="doc doc-contents first">
+
+        <p>Device Suggestions API Routes</p>
+<p>This module provides an endpoint for retrieving FDA device name suggestions based on
+user-provided device names and intended purposes. It leverages the FDAAgent service
+to fetch relevant suggestions for regulatory compliance workflows.</p>
+<p>Key Features:
+- Accepts alphanumeric device names and intended purposes as input
+- Validates input length and format
+- Integrates with the FDAAgent service for suggestion retrieval
+- Returns a structured response with suggested device names</p>
+<p>Security:
+- Input validation ensures proper formatting and prevents injection attacks
+- Exception handling for robust error reporting</p>
+
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+<h2 id="app.api.routes.v1.design_template.device_suggestions.suggest_devices" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">suggest_devices</span><span class="p">(</span><span class="n">device_name</span><span class="o">=</span><span class="n">Query</span><span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="n">min_length</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">max_length</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">pattern</span><span class="o">=</span><span class="s1">&#39;^[a-zA-Z0-9 ]+$&#39;</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;User input for device name search (alphanumeric, 3–50 chars)&#39;</span><span class="p">),</span> <span class="n">intended_purpose</span><span class="o">=</span><span class="n">Query</span><span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="n">min_length</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">max_length</span><span class="o">=</span><span class="mi">200</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;User input for intended purpose (5–200 chars)&#39;</span><span class="p">))</span></code>
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h2>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Retrieve FDA device name suggestions based on user input.</p>
+<p>This endpoint accepts a device name and intended purpose, validates the input,
+and fetches relevant FDA device name suggestions using the FDAAgent service.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>device_name</code>
+            </td>
+            <td>
+                  <code><span title="str">str</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Alphanumeric device name (3–50 characters)</p>
+              </div>
+            </td>
+            <td>
+                  <code><span title="fastapi.Query">Query</span>(..., min_length=3, max_length=50, pattern=&#39;^[a-zA-Z0-9 ]+$&#39;, description=&#39;User input for device name search (alphanumeric, 3–50 chars)&#39;)</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>intended_purpose</code>
+            </td>
+            <td>
+                  <code><span title="str">str</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Description of the intended purpose (5–200 characters)</p>
+              </div>
+            </td>
+            <td>
+                  <code><span title="fastapi.Query">Query</span>(..., min_length=5, max_length=200, description=&#39;User input for intended purpose (5–200 chars)&#39;)</code>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+<th>Name</th>          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+<td><code>DeviceSuggestionResponse</code></td>            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A structured response containing a list of suggested</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+<td></td>            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>device names relevant to the input criteria.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+<p><span class="doc-section-title">Raises:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                  <code><span title="fastapi.HTTPException">HTTPException</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>500 if the suggestion service encounters an error</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+<details class="example" open>
+  <summary>Example</summary>
+  <p>GET /suggest/devices_names?device_name=Pacemaker&amp;intended_purpose=Heart+rhythm+management</p>
+<p>Response:
+{
+    "suggested_devices": ["Cardiac Pacemaker", "Implantable Pacemaker"]
+}</p>
+</details>
+
+            <details class="mkdocstrings-source">
+              <summary>Source code in <code>app/api/routes/v1/design_template/device_suggestions.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 38</span>
+<span class="normal"> 39</span>
+<span class="normal"> 40</span>
+<span class="normal"> 41</span>
+<span class="normal"> 42</span>
+<span class="normal"> 43</span>
+<span class="normal"> 44</span>
+<span class="normal"> 45</span>
+<span class="normal"> 46</span>
+<span class="normal"> 47</span>
+<span class="normal"> 48</span>
+<span class="normal"> 49</span>
+<span class="normal"> 50</span>
+<span class="normal"> 51</span>
+<span class="normal"> 52</span>
+<span class="normal"> 53</span>
+<span class="normal"> 54</span>
+<span class="normal"> 55</span>
+<span class="normal"> 56</span>
+<span class="normal"> 57</span>
+<span class="normal"> 58</span>
+<span class="normal"> 59</span>
+<span class="normal"> 60</span>
+<span class="normal"> 61</span>
+<span class="normal"> 62</span>
+<span class="normal"> 63</span>
+<span class="normal"> 64</span>
+<span class="normal"> 65</span>
+<span class="normal"> 66</span>
+<span class="normal"> 67</span>
+<span class="normal"> 68</span>
+<span class="normal"> 69</span>
+<span class="normal"> 70</span>
+<span class="normal"> 71</span>
+<span class="normal"> 72</span>
+<span class="normal"> 73</span>
+<span class="normal"> 74</span>
+<span class="normal"> 75</span>
+<span class="normal"> 76</span>
+<span class="normal"> 77</span>
+<span class="normal"> 78</span>
+<span class="normal"> 79</span>
+<span class="normal"> 80</span>
+<span class="normal"> 81</span>
+<span class="normal"> 82</span>
+<span class="normal"> 83</span>
+<span class="normal"> 84</span>
+<span class="normal"> 85</span>
+<span class="normal"> 86</span>
+<span class="normal"> 87</span>
+<span class="normal"> 88</span>
+<span class="normal"> 89</span>
+<span class="normal"> 90</span>
+<span class="normal"> 91</span>
+<span class="normal"> 92</span>
+<span class="normal"> 93</span>
+<span class="normal"> 94</span>
+<span class="normal"> 95</span>
+<span class="normal"> 96</span>
+<span class="normal"> 97</span>
+<span class="normal"> 98</span>
+<span class="normal"> 99</span>
+<span class="normal">100</span>
+<span class="normal">101</span>
+<span class="normal">102</span>
+<span class="normal">103</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@router</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
+    <span class="s2">&quot;/devices_names&quot;</span><span class="p">,</span>
+    <span class="n">summary</span><span class="o">=</span><span class="s2">&quot;Get FDA device name suggestions&quot;</span><span class="p">,</span>
+    <span class="n">response_model</span><span class="o">=</span><span class="n">DeviceSuggestionResponse</span><span class="p">,</span>
+    <span class="n">name</span><span class="o">=</span><span class="s2">&quot;suggest_devices_names&quot;</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">suggest_devices</span><span class="p">(</span>
+    <span class="n">device_name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">Query</span><span class="p">(</span>
+        <span class="o">...</span><span class="p">,</span>
+        <span class="n">min_length</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span>
+        <span class="n">max_length</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span>
+        <span class="n">pattern</span><span class="o">=</span><span class="s2">&quot;^[a-zA-Z0-9 ]+$&quot;</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s2">&quot;User input for device name search (alphanumeric, 3–50 chars)&quot;</span><span class="p">,</span>
+    <span class="p">),</span>
+    <span class="n">intended_purpose</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">Query</span><span class="p">(</span>
+        <span class="o">...</span><span class="p">,</span>
+        <span class="n">min_length</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
+        <span class="n">max_length</span><span class="o">=</span><span class="mi">200</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s2">&quot;User input for intended purpose (5–200 chars)&quot;</span><span class="p">,</span>
+    <span class="p">),</span>
+<span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Retrieve FDA device name suggestions based on user input.</span>
+
+<span class="sd">    This endpoint accepts a device name and intended purpose, validates the input,</span>
+<span class="sd">    and fetches relevant FDA device name suggestions using the FDAAgent service.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        device_name (str): Alphanumeric device name (3–50 characters)</span>
+<span class="sd">        intended_purpose (str): Description of the intended purpose (5–200 characters)</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        DeviceSuggestionResponse: A structured response containing a list of suggested</span>
+<span class="sd">        device names relevant to the input criteria.</span>
+
+<span class="sd">    Raises:</span>
+<span class="sd">        HTTPException: 500 if the suggestion service encounters an error</span>
+
+<span class="sd">    Example:</span>
+<span class="sd">        GET /suggest/devices_names?device_name=Pacemaker&amp;intended_purpose=Heart+rhythm+management</span>
+
+<span class="sd">        Response:</span>
+<span class="sd">        {</span>
+<span class="sd">            &quot;suggested_devices&quot;: [&quot;Cardiac Pacemaker&quot;, &quot;Implantable Pacemaker&quot;]</span>
+<span class="sd">        }</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">try</span><span class="p">:</span>
+        <span class="c1"># Build request model manually (since GET cannot take JSON body)</span>
+        <span class="n">request</span> <span class="o">=</span> <span class="n">DeviceSuggestionRequest</span><span class="p">(</span>
+            <span class="n">device_name</span><span class="o">=</span><span class="n">device_name</span><span class="p">,</span>
+            <span class="n">intended_purpose</span><span class="o">=</span><span class="n">intended_purpose</span><span class="p">,</span>
+        <span class="p">)</span>
+
+        <span class="n">suggestions</span> <span class="o">=</span> <span class="n">agent</span><span class="o">.</span><span class="n">get_suggestions</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">device_name</span><span class="p">,</span> <span class="n">request</span><span class="o">.</span><span class="n">intended_purpose</span><span class="p">)</span>
+
+        <span class="c1"># 🔑 normalize to list[str]</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">suggestions</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+            <span class="n">suggested_devices</span> <span class="o">=</span> <span class="n">suggestions</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;relevant_device_names&quot;</span><span class="p">,</span> <span class="p">[])</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">suggested_devices</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">suggestions</span><span class="p">,</span> <span class="s2">&quot;relevant_device_names&quot;</span><span class="p">,</span> <span class="p">[])</span>
+
+        <span class="k">return</span> <span class="n">DeviceSuggestionResponse</span><span class="p">(</span><span class="n">suggested_devices</span><span class="o">=</span><span class="n">suggested_devices</span><span class="p">)</span>
+
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="n">HTTPException</span><span class="p">(</span><span class="n">status_code</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span> <span class="n">detail</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;Suggestion service error: </span><span class="si">{</span><span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+
+
+  </div>
+
+    </div>
+
+</div><hr />
+<h2 id="intended-user-api-manage-user-profiles">👤 Intended User API — Manage User Profiles</h2>
+<p>Defines user categories, skill levels, and roles associated with device usage.</p>
+
+
+<div class="doc doc-object doc-module">
+
+
+
+<a id="app.api.routes.v1.design_template.intended_user"></a>
+    <div class="doc doc-contents first">
+
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+<h2 id="app.api.routes.v1.design_template.intended_user.get_intended" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">get_intended</span><span class="p">(</span><span class="n">session_id</span><span class="o">=</span><span class="n">Path</span><span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;The ID of the session&#39;</span><span class="p">),</span> <span class="n">manager</span><span class="o">=</span><span class="n">Depends</span><span class="p">(</span><span class="n">get_session_manager</span><span class="p">))</span></code>
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h2>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Retrieve system-generated intended users for a session.</p>
+<p>This endpoint fetches the intended users generated by the system for a given session.
+If no intended users exist, it triggers the intended user node to populate the data.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>session_id</code>
+            </td>
+            <td>
+                  <code><span title="str">str</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The unique identifier for the session.</p>
+              </div>
+            </td>
+            <td>
+                  <code><span title="fastapi.Path">Path</span>(..., description=&#39;The ID of the session&#39;)</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>manager</code>
+            </td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Dependency-injected session manager for state operations.</p>
+              </div>
+            </td>
+            <td>
+                  <code><span title="fastapi.Depends">Depends</span>(<span title="regulatory.app.core.state.get_session_manager">get_session_manager</span>)</code>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+<th>Name</th>          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+<td><code>IntendedUserResponse</code></td>            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Contains the session ID, list of intended users, and status.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+<p><span class="doc-section-title">Raises:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                  <code><span title="fastapi.HTTPException">HTTPException</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>404 if the session is not found.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+<details class="example" open>
+  <summary>Example</summary>
+  <p>GET /intended-user/{session_id}</p>
+<p>Response:
+{
+    "session_id": "session123",
+    "intended_users": ["Surgeons", "Nurses"],
+    "status": "success"
+}</p>
+</details>
+
+            <details class="mkdocstrings-source">
+              <summary>Source code in <code>app/api/routes/v1/design_template/intended_user.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span>
+<span class="normal">55</span>
+<span class="normal">56</span>
+<span class="normal">57</span>
+<span class="normal">58</span>
+<span class="normal">59</span>
+<span class="normal">60</span>
+<span class="normal">61</span>
+<span class="normal">62</span>
+<span class="normal">63</span>
+<span class="normal">64</span>
+<span class="normal">65</span>
+<span class="normal">66</span>
+<span class="normal">67</span>
+<span class="normal">68</span>
+<span class="normal">69</span>
+<span class="normal">70</span>
+<span class="normal">71</span>
+<span class="normal">72</span>
+<span class="normal">73</span>
+<span class="normal">74</span>
+<span class="normal">75</span>
+<span class="normal">76</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@router</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
+    <span class="s2">&quot;/</span><span class="si">{session_id}</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="n">response_model</span><span class="o">=</span><span class="n">IntendedUserResponse</span><span class="p">,</span>
+    <span class="n">summary</span><span class="o">=</span><span class="s2">&quot;Get system-generated intended users&quot;</span><span class="p">,</span>
+    <span class="n">name</span><span class="o">=</span><span class="s2">&quot;get_intended&quot;</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">get_intended</span><span class="p">(</span>
+    <span class="n">session_id</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;The ID of the session&quot;</span><span class="p">),</span>
+    <span class="n">manager</span><span class="o">=</span><span class="n">Depends</span><span class="p">(</span><span class="n">get_session_manager</span><span class="p">),</span>
+<span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Retrieve system-generated intended users for a session.</span>
+
+<span class="sd">    This endpoint fetches the intended users generated by the system for a given session.</span>
+<span class="sd">    If no intended users exist, it triggers the intended user node to populate the data.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        session_id (str): The unique identifier for the session.</span>
+<span class="sd">        manager: Dependency-injected session manager for state operations.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        IntendedUserResponse: Contains the session ID, list of intended users, and status.</span>
+
+<span class="sd">    Raises:</span>
+<span class="sd">        HTTPException: 404 if the session is not found.</span>
+
+<span class="sd">    Example:</span>
+<span class="sd">        GET /intended-user/{session_id}</span>
+
+<span class="sd">        Response:</span>
+<span class="sd">        {</span>
+<span class="sd">            &quot;session_id&quot;: &quot;session123&quot;,</span>
+<span class="sd">            &quot;intended_users&quot;: [&quot;Surgeons&quot;, &quot;Nurses&quot;],</span>
+<span class="sd">            &quot;status&quot;: &quot;success&quot;</span>
+<span class="sd">        }</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">state</span> <span class="o">=</span> <span class="n">manager</span><span class="o">.</span><span class="n">get_session</span><span class="p">(</span><span class="n">session_id</span><span class="p">)</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">state</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="n">HTTPException</span><span class="p">(</span><span class="n">status_code</span><span class="o">=</span><span class="n">status</span><span class="o">.</span><span class="n">HTTP_404_NOT_FOUND</span><span class="p">,</span> <span class="n">detail</span><span class="o">=</span><span class="s2">&quot;Session not found&quot;</span><span class="p">)</span>
+
+    <span class="n">update_payload</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;design_data&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">&quot;system_generated&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s2">&quot;intended_users&quot;</span><span class="p">:</span> <span class="p">[],</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="n">manager</span><span class="o">.</span><span class="n">update_nested</span><span class="p">(</span><span class="n">session_id</span><span class="p">,</span> <span class="n">update_payload</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">state</span><span class="p">[</span><span class="s2">&quot;design_data&quot;</span><span class="p">][</span><span class="s2">&quot;system_generated&quot;</span><span class="p">][</span><span class="s2">&quot;intended_users&quot;</span><span class="p">]:</span>
+        <span class="n">state</span> <span class="o">=</span> <span class="n">intended_user_node</span><span class="p">(</span><span class="n">state</span><span class="p">)</span>
+        <span class="n">manager</span><span class="o">.</span><span class="n">update_nested</span><span class="p">(</span><span class="n">session_id</span><span class="p">,</span> <span class="n">state</span><span class="p">)</span>
+
+    <span class="n">iu</span> <span class="o">=</span> <span class="n">state</span><span class="p">[</span><span class="s2">&quot;design_data&quot;</span><span class="p">][</span><span class="s2">&quot;system_generated&quot;</span><span class="p">][</span><span class="s2">&quot;intended_users&quot;</span><span class="p">]</span>
+    <span class="k">return</span> <span class="n">IntendedUserResponse</span><span class="p">(</span>
+        <span class="n">session_id</span><span class="o">=</span><span class="n">session_id</span><span class="p">,</span>
+        <span class="n">intended_users</span><span class="o">=</span><span class="n">iu</span><span class="p">,</span>
+        <span class="n">status</span><span class="o">=</span><span class="s2">&quot;success&quot;</span><span class="p">,</span>
+    <span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h2 id="app.api.routes.v1.design_template.intended_user.post_intended" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">post_intended</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">session_id</span><span class="o">=</span><span class="n">Path</span><span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;The ID of the session&#39;</span><span class="p">),</span> <span class="n">manager</span><span class="o">=</span><span class="n">Depends</span><span class="p">(</span><span class="n">get_session_manager</span><span class="p">))</span></code>
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h2>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Update user-confirmed intended users for a session.</p>
+<p>This endpoint allows users to update the list of intended users for a session.
+The provided list is merged with the existing user-confirmed intended users.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>request</code>
+            </td>
+            <td>
+                  <code><span title="regulatory.app.models.intended_user.IntendedUserUpdateRequest">IntendedUserUpdateRequest</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Contains the list of intended users to add.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>session_id</code>
+            </td>
+            <td>
+                  <code><span title="str">str</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The unique identifier for the session.</p>
+              </div>
+            </td>
+            <td>
+                  <code><span title="fastapi.Path">Path</span>(..., description=&#39;The ID of the session&#39;)</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>manager</code>
+            </td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Dependency-injected session manager for state operations.</p>
+              </div>
+            </td>
+            <td>
+                  <code><span title="fastapi.Depends">Depends</span>(<span title="regulatory.app.core.state.get_session_manager">get_session_manager</span>)</code>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+<th>Name</th>          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+<td><code>IntendedUserUpdateResponse</code></td>            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Contains the session ID and a success message.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+<p><span class="doc-section-title">Raises:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                  <code><span title="fastapi.HTTPException">HTTPException</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>404 if the session is not found.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+<details class="example" open>
+  <summary>Example</summary>
+  <p>POST /intended-user/{session_id}
+{
+    "intended_users": ["Technicians"]
+}</p>
+<p>Response:
+{
+    "session_id": "session123",
+    "message": "Intended users updated successfully."
+}</p>
+</details>
+
+            <details class="mkdocstrings-source">
+              <summary>Source code in <code>app/api/routes/v1/design_template/intended_user.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 80</span>
+<span class="normal"> 81</span>
+<span class="normal"> 82</span>
+<span class="normal"> 83</span>
+<span class="normal"> 84</span>
+<span class="normal"> 85</span>
+<span class="normal"> 86</span>
+<span class="normal"> 87</span>
+<span class="normal"> 88</span>
+<span class="normal"> 89</span>
+<span class="normal"> 90</span>
+<span class="normal"> 91</span>
+<span class="normal"> 92</span>
+<span class="normal"> 93</span>
+<span class="normal"> 94</span>
+<span class="normal"> 95</span>
+<span class="normal"> 96</span>
+<span class="normal"> 97</span>
+<span class="normal"> 98</span>
+<span class="normal"> 99</span>
+<span class="normal">100</span>
+<span class="normal">101</span>
+<span class="normal">102</span>
+<span class="normal">103</span>
+<span class="normal">104</span>
+<span class="normal">105</span>
+<span class="normal">106</span>
+<span class="normal">107</span>
+<span class="normal">108</span>
+<span class="normal">109</span>
+<span class="normal">110</span>
+<span class="normal">111</span>
+<span class="normal">112</span>
+<span class="normal">113</span>
+<span class="normal">114</span>
+<span class="normal">115</span>
+<span class="normal">116</span>
+<span class="normal">117</span>
+<span class="normal">118</span>
+<span class="normal">119</span>
+<span class="normal">120</span>
+<span class="normal">121</span>
+<span class="normal">122</span>
+<span class="normal">123</span>
+<span class="normal">124</span>
+<span class="normal">125</span>
+<span class="normal">126</span>
+<span class="normal">127</span>
+<span class="normal">128</span>
+<span class="normal">129</span>
+<span class="normal">130</span>
+<span class="normal">131</span>
+<span class="normal">132</span>
+<span class="normal">133</span>
+<span class="normal">134</span>
+<span class="normal">135</span>
+<span class="normal">136</span>
+<span class="normal">137</span>
+<span class="normal">138</span>
+<span class="normal">139</span>
+<span class="normal">140</span>
+<span class="normal">141</span>
+<span class="normal">142</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@router</span><span class="o">.</span><span class="n">post</span><span class="p">(</span>
+    <span class="s2">&quot;/</span><span class="si">{session_id}</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="n">response_model</span><span class="o">=</span><span class="n">IntendedUserUpdateResponse</span><span class="p">,</span>
+    <span class="n">summary</span><span class="o">=</span><span class="s2">&quot;Update user-confirmed intended users&quot;</span><span class="p">,</span>
+    <span class="n">name</span><span class="o">=</span><span class="s2">&quot;post_intended&quot;</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">post_intended</span><span class="p">(</span>
+    <span class="n">request</span><span class="p">:</span> <span class="n">IntendedUserUpdateRequest</span><span class="p">,</span>
+    <span class="n">session_id</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;The ID of the session&quot;</span><span class="p">),</span>
+    <span class="n">manager</span><span class="o">=</span><span class="n">Depends</span><span class="p">(</span><span class="n">get_session_manager</span><span class="p">),</span>
+<span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Update user-confirmed intended users for a session.</span>
+
+<span class="sd">    This endpoint allows users to update the list of intended users for a session.</span>
+<span class="sd">    The provided list is merged with the existing user-confirmed intended users.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        request (IntendedUserUpdateRequest): Contains the list of intended users to add.</span>
+<span class="sd">        session_id (str): The unique identifier for the session.</span>
+<span class="sd">        manager: Dependency-injected session manager for state operations.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        IntendedUserUpdateResponse: Contains the session ID and a success message.</span>
+
+<span class="sd">    Raises:</span>
+<span class="sd">        HTTPException: 404 if the session is not found.</span>
+
+<span class="sd">    Example:</span>
+<span class="sd">        POST /intended-user/{session_id}</span>
+<span class="sd">        {</span>
+<span class="sd">            &quot;intended_users&quot;: [&quot;Technicians&quot;]</span>
+<span class="sd">        }</span>
+
+<span class="sd">        Response:</span>
+<span class="sd">        {</span>
+<span class="sd">            &quot;session_id&quot;: &quot;session123&quot;,</span>
+<span class="sd">            &quot;message&quot;: &quot;Intended users updated successfully.&quot;</span>
+<span class="sd">        }</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">state</span> <span class="o">=</span> <span class="n">manager</span><span class="o">.</span><span class="n">get_session</span><span class="p">(</span><span class="n">session_id</span><span class="p">)</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">state</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="n">HTTPException</span><span class="p">(</span><span class="n">status_code</span><span class="o">=</span><span class="n">status</span><span class="o">.</span><span class="n">HTTP_404_NOT_FOUND</span><span class="p">,</span> <span class="n">detail</span><span class="o">=</span><span class="s2">&quot;Session not found&quot;</span><span class="p">)</span>
+
+    <span class="n">update_payload</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;design_data&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">&quot;user_confirmed&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s2">&quot;intended_users&quot;</span><span class="p">:</span> <span class="p">[],</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="n">manager</span><span class="o">.</span><span class="n">update_nested</span><span class="p">(</span><span class="n">session_id</span><span class="p">,</span> <span class="n">update_payload</span><span class="p">)</span>
+
+    <span class="n">iu</span> <span class="o">=</span> <span class="n">state</span><span class="p">[</span><span class="s2">&quot;design_data&quot;</span><span class="p">][</span><span class="s2">&quot;user_confirmed&quot;</span><span class="p">][</span><span class="s2">&quot;intended_users&quot;</span><span class="p">]</span>
+    <span class="n">iu</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">iu</span> <span class="o">+</span> <span class="n">request</span><span class="o">.</span><span class="n">intended_users</span><span class="p">))</span>
+    <span class="n">state</span><span class="p">[</span><span class="s2">&quot;design_data&quot;</span><span class="p">][</span><span class="s2">&quot;user_confirmed&quot;</span><span class="p">][</span><span class="s2">&quot;intended_users&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">iu</span>
+
+    <span class="n">manager</span><span class="o">.</span><span class="n">update_nested</span><span class="p">(</span><span class="n">session_id</span><span class="p">,</span> <span class="n">state</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">IntendedUserUpdateResponse</span><span class="p">(</span>
+        <span class="n">session_id</span><span class="o">=</span><span class="n">session_id</span><span class="p">,</span>
+        <span class="n">message</span><span class="o">=</span><span class="s2">&quot;Intended users updated successfully.&quot;</span><span class="p">,</span>
+    <span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+
+
+  </div>
+
+    </div>
+
+</div><hr />
+<h2 id="recommender-api-predict-classifications">🧠 Recommender API — Predict Classifications</h2>
+<p>Provides predictive classification, material, or intended-purpose recommendations<br />
+based on current device input data.</p>
+
+
+<div class="doc doc-object doc-module">
+
+
+
+<a id="app.api.routes.v1.design_template.recommender"></a>
+    <div class="doc doc-contents first">
+
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+<h2 id="app.api.routes.v1.design_template.recommender.get_component" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">get_component</span><span class="p">(</span><span class="n">session_id</span><span class="o">=</span><span class="n">Path</span><span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;The ID of the session&#39;</span><span class="p">),</span> <span class="n">manager</span><span class="o">=</span><span class="n">Depends</span><span class="p">(</span><span class="n">get_session_manager</span><span class="p">))</span></code>
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h2>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Retrieve system-generated component recommendations for a session.</p>
+<p>This endpoint fetches recommended components generated by the system for a given session.
+If no recommendations exist, it triggers the component recommender node to populate the data.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>session_id</code>
+            </td>
+            <td>
+                  <code><span title="str">str</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The unique identifier for the session.</p>
+              </div>
+            </td>
+            <td>
+                  <code><span title="fastapi.Path">Path</span>(..., description=&#39;The ID of the session&#39;)</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>manager</code>
+            </td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Dependency-injected session manager for state operations.</p>
+              </div>
+            </td>
+            <td>
+                  <code><span title="fastapi.Depends">Depends</span>(<span title="regulatory.app.core.state.get_session_manager">get_session_manager</span>)</code>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+<th>Name</th>          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+<td><code>ComponentRecommenderResponse</code></td>            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Contains the session ID and a list of recommended components.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+<p><span class="doc-section-title">Raises:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                  <code><span title="fastapi.HTTPException">HTTPException</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>404 if the session is not found, 500 if session update fails.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+<details class="example" open>
+  <summary>Example</summary>
+  <p>GET /recommender/{session_id}</p>
+<p>Response:
+{
+    "session_id": "session123",
+    "recommended_components": ["Sensor", "Actuator"]
+}</p>
+</details>
+
+            <details class="mkdocstrings-source">
+              <summary>Source code in <code>app/api/routes/v1/design_template/recommender.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span>
+<span class="normal">55</span>
+<span class="normal">56</span>
+<span class="normal">57</span>
+<span class="normal">58</span>
+<span class="normal">59</span>
+<span class="normal">60</span>
+<span class="normal">61</span>
+<span class="normal">62</span>
+<span class="normal">63</span>
+<span class="normal">64</span>
+<span class="normal">65</span>
+<span class="normal">66</span>
+<span class="normal">67</span>
+<span class="normal">68</span>
+<span class="normal">69</span>
+<span class="normal">70</span>
+<span class="normal">71</span>
+<span class="normal">72</span>
+<span class="normal">73</span>
+<span class="normal">74</span>
+<span class="normal">75</span>
+<span class="normal">76</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@router</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
+    <span class="s2">&quot;/</span><span class="si">{session_id}</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="n">response_model</span><span class="o">=</span><span class="n">ComponentRecommenderResponse</span><span class="p">,</span>
+    <span class="n">summary</span><span class="o">=</span><span class="s2">&quot;Get system-generated component recommendations&quot;</span><span class="p">,</span>
+    <span class="n">name</span><span class="o">=</span><span class="s2">&quot;get_component&quot;</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">get_component</span><span class="p">(</span>
+    <span class="n">session_id</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;The ID of the session&quot;</span><span class="p">),</span>
+    <span class="n">manager</span><span class="o">=</span><span class="n">Depends</span><span class="p">(</span><span class="n">get_session_manager</span><span class="p">),</span>
+<span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Retrieve system-generated component recommendations for a session.</span>
+
+<span class="sd">    This endpoint fetches recommended components generated by the system for a given session.</span>
+<span class="sd">    If no recommendations exist, it triggers the component recommender node to populate the data.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        session_id (str): The unique identifier for the session.</span>
+<span class="sd">        manager: Dependency-injected session manager for state operations.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        ComponentRecommenderResponse: Contains the session ID and a list of recommended components.</span>
+
+<span class="sd">    Raises:</span>
+<span class="sd">        HTTPException: 404 if the session is not found, 500 if session update fails.</span>
+
+<span class="sd">    Example:</span>
+<span class="sd">        GET /recommender/{session_id}</span>
+
+<span class="sd">        Response:</span>
+<span class="sd">        {</span>
+<span class="sd">            &quot;session_id&quot;: &quot;session123&quot;,</span>
+<span class="sd">            &quot;recommended_components&quot;: [&quot;Sensor&quot;, &quot;Actuator&quot;]</span>
+<span class="sd">        }</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">state</span> <span class="o">=</span> <span class="n">manager</span><span class="o">.</span><span class="n">get_session</span><span class="p">(</span><span class="n">session_id</span><span class="p">)</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">state</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="n">HTTPException</span><span class="p">(</span><span class="n">status_code</span><span class="o">=</span><span class="n">status</span><span class="o">.</span><span class="n">HTTP_404_NOT_FOUND</span><span class="p">,</span> <span class="n">detail</span><span class="o">=</span><span class="s2">&quot;Session not found&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Ensure design_data/system_generated exists</span>
+    <span class="n">update_payload</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;design_data&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">&quot;system_generated&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s2">&quot;components&quot;</span><span class="p">:</span> <span class="p">[],</span>
+            <span class="p">},</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="n">manager</span><span class="o">.</span><span class="n">update_nested</span><span class="p">(</span><span class="n">session_id</span><span class="p">,</span> <span class="n">update_payload</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">state</span><span class="p">[</span><span class="s2">&quot;design_data&quot;</span><span class="p">][</span><span class="s2">&quot;system_generated&quot;</span><span class="p">][</span><span class="s2">&quot;components&quot;</span><span class="p">]:</span>
+        <span class="n">state</span> <span class="o">=</span> <span class="n">component_recommender_node</span><span class="p">(</span><span class="n">state</span><span class="p">)</span>
+        <span class="n">success</span> <span class="o">=</span> <span class="n">manager</span><span class="o">.</span><span class="n">update_session</span><span class="p">(</span><span class="n">session_id</span><span class="p">,</span> <span class="n">state</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">success</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">HTTPException</span><span class="p">(</span>
+                <span class="n">status_code</span><span class="o">=</span><span class="n">status</span><span class="o">.</span><span class="n">HTTP_500_INTERNAL_SERVER_ERROR</span><span class="p">,</span>
+                <span class="n">detail</span><span class="o">=</span><span class="s2">&quot;Failed to update session in Redis.&quot;</span><span class="p">,</span>
+            <span class="p">)</span>
+
+    <span class="n">comps</span> <span class="o">=</span> <span class="n">state</span><span class="p">[</span><span class="s2">&quot;design_data&quot;</span><span class="p">][</span><span class="s2">&quot;system_generated&quot;</span><span class="p">][</span><span class="s2">&quot;components&quot;</span><span class="p">]</span>
+    <span class="k">return</span> <span class="n">ComponentRecommenderResponse</span><span class="p">(</span>
+        <span class="n">session_id</span><span class="o">=</span><span class="n">session_id</span><span class="p">,</span>
+        <span class="n">recommended_components</span><span class="o">=</span><span class="n">comps</span><span class="p">,</span>
+    <span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h2 id="app.api.routes.v1.design_template.recommender.update_component" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">update_component</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">session_id</span><span class="o">=</span><span class="n">Path</span><span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;The ID of the session&#39;</span><span class="p">),</span> <span class="n">manager</span><span class="o">=</span><span class="n">Depends</span><span class="p">(</span><span class="n">get_session_manager</span><span class="p">))</span></code>
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h2>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Update user-confirmed component selections for a session.</p>
+<p>This endpoint allows users to update the list of confirmed components for a session.
+The provided user-selected and user-added components are merged with the existing list.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>request</code>
+            </td>
+            <td>
+                  <code><span title="regulatory.app.models.component.ComponentSelectionRequest">ComponentSelectionRequest</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Contains user-selected and user-added components.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>session_id</code>
+            </td>
+            <td>
+                  <code><span title="str">str</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The unique identifier for the session.</p>
+              </div>
+            </td>
+            <td>
+                  <code><span title="fastapi.Path">Path</span>(..., description=&#39;The ID of the session&#39;)</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>manager</code>
+            </td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Dependency-injected session manager for state operations.</p>
+              </div>
+            </td>
+            <td>
+                  <code><span title="fastapi.Depends">Depends</span>(<span title="regulatory.app.core.state.get_session_manager">get_session_manager</span>)</code>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+<th>Name</th>          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+<td><code>ComponentSelectionResponse</code></td>            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Contains the session ID and a success message.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+<p><span class="doc-section-title">Raises:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                  <code><span title="fastapi.HTTPException">HTTPException</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>404 if the session is not found.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+<details class="example" open>
+  <summary>Example</summary>
+  <p>POST /recommender/{session_id}
+{
+    "user_selected_components": ["Sensor"],
+    "user_added_components": ["Custom Component"]
+}</p>
+<p>Response:
+{
+    "session_id": "session123",
+    "message": "Component selections and additions updated successfully."
+}</p>
+</details>
+
+            <details class="mkdocstrings-source">
+              <summary>Source code in <code>app/api/routes/v1/design_template/recommender.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 80</span>
+<span class="normal"> 81</span>
+<span class="normal"> 82</span>
+<span class="normal"> 83</span>
+<span class="normal"> 84</span>
+<span class="normal"> 85</span>
+<span class="normal"> 86</span>
+<span class="normal"> 87</span>
+<span class="normal"> 88</span>
+<span class="normal"> 89</span>
+<span class="normal"> 90</span>
+<span class="normal"> 91</span>
+<span class="normal"> 92</span>
+<span class="normal"> 93</span>
+<span class="normal"> 94</span>
+<span class="normal"> 95</span>
+<span class="normal"> 96</span>
+<span class="normal"> 97</span>
+<span class="normal"> 98</span>
+<span class="normal"> 99</span>
+<span class="normal">100</span>
+<span class="normal">101</span>
+<span class="normal">102</span>
+<span class="normal">103</span>
+<span class="normal">104</span>
+<span class="normal">105</span>
+<span class="normal">106</span>
+<span class="normal">107</span>
+<span class="normal">108</span>
+<span class="normal">109</span>
+<span class="normal">110</span>
+<span class="normal">111</span>
+<span class="normal">112</span>
+<span class="normal">113</span>
+<span class="normal">114</span>
+<span class="normal">115</span>
+<span class="normal">116</span>
+<span class="normal">117</span>
+<span class="normal">118</span>
+<span class="normal">119</span>
+<span class="normal">120</span>
+<span class="normal">121</span>
+<span class="normal">122</span>
+<span class="normal">123</span>
+<span class="normal">124</span>
+<span class="normal">125</span>
+<span class="normal">126</span>
+<span class="normal">127</span>
+<span class="normal">128</span>
+<span class="normal">129</span>
+<span class="normal">130</span>
+<span class="normal">131</span>
+<span class="normal">132</span>
+<span class="normal">133</span>
+<span class="normal">134</span>
+<span class="normal">135</span>
+<span class="normal">136</span>
+<span class="normal">137</span>
+<span class="normal">138</span>
+<span class="normal">139</span>
+<span class="normal">140</span>
+<span class="normal">141</span>
+<span class="normal">142</span>
+<span class="normal">143</span>
+<span class="normal">144</span>
+<span class="normal">145</span>
+<span class="normal">146</span>
+<span class="normal">147</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@router</span><span class="o">.</span><span class="n">post</span><span class="p">(</span>
+    <span class="s2">&quot;/</span><span class="si">{session_id}</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="n">response_model</span><span class="o">=</span><span class="n">ComponentSelectionResponse</span><span class="p">,</span>
+    <span class="n">summary</span><span class="o">=</span><span class="s2">&quot;Update user-confirmed component selections&quot;</span><span class="p">,</span>
+    <span class="n">name</span><span class="o">=</span><span class="s2">&quot;update_component&quot;</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">update_component</span><span class="p">(</span>
+    <span class="n">request</span><span class="p">:</span> <span class="n">ComponentSelectionRequest</span><span class="p">,</span>
+    <span class="n">session_id</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;The ID of the session&quot;</span><span class="p">),</span>
+    <span class="n">manager</span><span class="o">=</span><span class="n">Depends</span><span class="p">(</span><span class="n">get_session_manager</span><span class="p">),</span>
+<span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Update user-confirmed component selections for a session.</span>
+
+<span class="sd">    This endpoint allows users to update the list of confirmed components for a session.</span>
+<span class="sd">    The provided user-selected and user-added components are merged with the existing list.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        request (ComponentSelectionRequest): Contains user-selected and user-added components.</span>
+<span class="sd">        session_id (str): The unique identifier for the session.</span>
+<span class="sd">        manager: Dependency-injected session manager for state operations.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        ComponentSelectionResponse: Contains the session ID and a success message.</span>
+
+<span class="sd">    Raises:</span>
+<span class="sd">        HTTPException: 404 if the session is not found.</span>
+
+<span class="sd">    Example:</span>
+<span class="sd">        POST /recommender/{session_id}</span>
+<span class="sd">        {</span>
+<span class="sd">            &quot;user_selected_components&quot;: [&quot;Sensor&quot;],</span>
+<span class="sd">            &quot;user_added_components&quot;: [&quot;Custom Component&quot;]</span>
+<span class="sd">        }</span>
+
+<span class="sd">        Response:</span>
+<span class="sd">        {</span>
+<span class="sd">            &quot;session_id&quot;: &quot;session123&quot;,</span>
+<span class="sd">            &quot;message&quot;: &quot;Component selections and additions updated successfully.&quot;</span>
+<span class="sd">        }</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">state</span> <span class="o">=</span> <span class="n">manager</span><span class="o">.</span><span class="n">get_session</span><span class="p">(</span><span class="n">session_id</span><span class="p">)</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">state</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="n">HTTPException</span><span class="p">(</span><span class="n">status_code</span><span class="o">=</span><span class="n">status</span><span class="o">.</span><span class="n">HTTP_404_NOT_FOUND</span><span class="p">,</span> <span class="n">detail</span><span class="o">=</span><span class="s2">&quot;Session not found&quot;</span><span class="p">)</span>
+
+    <span class="n">update_payload</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;design_data&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">&quot;user_confirmed&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s2">&quot;components&quot;</span><span class="p">:</span> <span class="p">[],</span>
+            <span class="p">},</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="n">manager</span><span class="o">.</span><span class="n">update_nested</span><span class="p">(</span><span class="n">session_id</span><span class="p">,</span> <span class="n">update_payload</span><span class="p">)</span>
+
+    <span class="c1"># Add user-selected and user-added components to the confirmed components list</span>
+    <span class="n">confirmed_components</span> <span class="o">=</span> <span class="n">state</span><span class="p">[</span><span class="s2">&quot;design_data&quot;</span><span class="p">][</span><span class="s2">&quot;user_confirmed&quot;</span><span class="p">][</span><span class="s2">&quot;components&quot;</span><span class="p">]</span>
+    <span class="n">confirmed_components</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">user_selected_components</span><span class="p">)</span>
+    <span class="n">confirmed_components</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">user_added_components</span><span class="p">)</span>
+
+    <span class="n">state</span><span class="p">[</span><span class="s2">&quot;design_data&quot;</span><span class="p">][</span><span class="s2">&quot;user_confirmed&quot;</span><span class="p">][</span><span class="s2">&quot;components&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">confirmed_components</span><span class="p">)</span>
+
+    <span class="n">manager</span><span class="o">.</span><span class="n">update_session</span><span class="p">(</span><span class="n">session_id</span><span class="p">,</span> <span class="n">state</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">ComponentSelectionResponse</span><span class="p">(</span>
+        <span class="n">session_id</span><span class="o">=</span><span class="n">session_id</span><span class="p">,</span>
+        <span class="n">message</span><span class="o">=</span><span class="s2">&quot;Component selections and additions updated successfully.&quot;</span><span class="p">,</span>
+    <span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+
+
+  </div>
+
+    </div>
+
+</div><hr />
+<h2 id="risk-assessment-api-evaluate-device-risk">⚠️ Risk Assessment API — Evaluate Device Risk</h2>
+<p>Analyzes medical device parameters and assigns potential <strong>risk categories</strong> for compliance documentation.</p>
+
+
+<div class="doc doc-object doc-module">
+
+
+
+<a id="app.api.routes.v1.design_template.risk"></a>
+    <div class="doc doc-contents first">
+
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+<h2 id="app.api.routes.v1.design_template.risk.get_risk" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">get_risk</span><span class="p">(</span><span class="n">session_id</span><span class="o">=</span><span class="n">Path</span><span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;The ID of the session&#39;</span><span class="p">),</span> <span class="n">manager</span><span class="o">=</span><span class="n">Depends</span><span class="p">(</span><span class="n">get_session_manager</span><span class="p">))</span></code>
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h2>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Retrieve system-generated risk classification for a session.</p>
+<p>This endpoint fetches the risk classification generated by the system for a given session.
+If no classification exists, it triggers the risk classification node to populate the data.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>session_id</code>
+            </td>
+            <td>
+                  <code><span title="str">str</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The unique identifier for the session.</p>
+              </div>
+            </td>
+            <td>
+                  <code><span title="fastapi.Path">Path</span>(..., description=&#39;The ID of the session&#39;)</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>manager</code>
+            </td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Dependency-injected session manager for state operations.</p>
+              </div>
+            </td>
+            <td>
+                  <code><span title="fastapi.Depends">Depends</span>(<span title="regulatory.app.core.state.get_session_manager">get_session_manager</span>)</code>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+<th>Name</th>          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+<td><code>RiskClassificationResponse</code></td>            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Contains the session ID and the risk classification data.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+<p><span class="doc-section-title">Raises:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                  <code><span title="fastapi.HTTPException">HTTPException</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>404 if the session is not found.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+<details class="example" open>
+  <summary>Example</summary>
+  <p>GET /risk/{session_id}</p>
+<p>Response:
+{
+    "session_id": "session123",
+    "risk_classification": {
+        "classification": "Class II",
+        "justification": "Moderate risk device requiring special controls."
+    }
+}</p>
+</details>
+
+            <details class="mkdocstrings-source">
+              <summary>Source code in <code>app/api/routes/v1/design_template/risk.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span>
+<span class="normal">55</span>
+<span class="normal">56</span>
+<span class="normal">57</span>
+<span class="normal">58</span>
+<span class="normal">59</span>
+<span class="normal">60</span>
+<span class="normal">61</span>
+<span class="normal">62</span>
+<span class="normal">63</span>
+<span class="normal">64</span>
+<span class="normal">65</span>
+<span class="normal">66</span>
+<span class="normal">67</span>
+<span class="normal">68</span>
+<span class="normal">69</span>
+<span class="normal">70</span>
+<span class="normal">71</span>
+<span class="normal">72</span>
+<span class="normal">73</span>
+<span class="normal">74</span>
+<span class="normal">75</span>
+<span class="normal">76</span>
+<span class="normal">77</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@router</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
+    <span class="s2">&quot;/</span><span class="si">{session_id}</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="n">response_model</span><span class="o">=</span><span class="n">RiskClassificationResponse</span><span class="p">,</span>
+    <span class="n">summary</span><span class="o">=</span><span class="s2">&quot;Get system-generated risk classification&quot;</span><span class="p">,</span>
+    <span class="n">name</span><span class="o">=</span><span class="s2">&quot;get_risk&quot;</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">get_risk</span><span class="p">(</span>
+    <span class="n">session_id</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;The ID of the session&quot;</span><span class="p">),</span>
+    <span class="n">manager</span><span class="o">=</span><span class="n">Depends</span><span class="p">(</span><span class="n">get_session_manager</span><span class="p">),</span>
+<span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Retrieve system-generated risk classification for a session.</span>
+
+<span class="sd">    This endpoint fetches the risk classification generated by the system for a given session.</span>
+<span class="sd">    If no classification exists, it triggers the risk classification node to populate the data.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        session_id (str): The unique identifier for the session.</span>
+<span class="sd">        manager: Dependency-injected session manager for state operations.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        RiskClassificationResponse: Contains the session ID and the risk classification data.</span>
+
+<span class="sd">    Raises:</span>
+<span class="sd">        HTTPException: 404 if the session is not found.</span>
+
+<span class="sd">    Example:</span>
+<span class="sd">        GET /risk/{session_id}</span>
+
+<span class="sd">        Response:</span>
+<span class="sd">        {</span>
+<span class="sd">            &quot;session_id&quot;: &quot;session123&quot;,</span>
+<span class="sd">            &quot;risk_classification&quot;: {</span>
+<span class="sd">                &quot;classification&quot;: &quot;Class II&quot;,</span>
+<span class="sd">                &quot;justification&quot;: &quot;Moderate risk device requiring special controls.&quot;</span>
+<span class="sd">            }</span>
+<span class="sd">        }</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">state</span> <span class="o">=</span> <span class="n">manager</span><span class="o">.</span><span class="n">get_session</span><span class="p">(</span><span class="n">session_id</span><span class="p">)</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">state</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="n">HTTPException</span><span class="p">(</span><span class="n">status_code</span><span class="o">=</span><span class="n">status</span><span class="o">.</span><span class="n">HTTP_404_NOT_FOUND</span><span class="p">,</span> <span class="n">detail</span><span class="o">=</span><span class="s2">&quot;Session not found&quot;</span><span class="p">)</span>
+
+    <span class="n">update_payload</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;design_data&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">&quot;system_generated&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s2">&quot;risk_classification&quot;</span><span class="p">:</span> <span class="p">{},</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="n">manager</span><span class="o">.</span><span class="n">update_nested</span><span class="p">(</span><span class="n">session_id</span><span class="p">,</span> <span class="n">update_payload</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">state</span><span class="p">[</span><span class="s2">&quot;design_data&quot;</span><span class="p">][</span><span class="s2">&quot;system_generated&quot;</span><span class="p">][</span><span class="s2">&quot;risk_classification&quot;</span><span class="p">]:</span>
+        <span class="n">state</span> <span class="o">=</span> <span class="n">risk_classify_node</span><span class="p">(</span><span class="n">state</span><span class="p">)</span>
+        <span class="n">manager</span><span class="o">.</span><span class="n">update_session</span><span class="p">(</span><span class="n">session_id</span><span class="p">,</span> <span class="n">state</span><span class="p">)</span>
+
+    <span class="n">rc</span> <span class="o">=</span> <span class="n">state</span><span class="p">[</span><span class="s2">&quot;design_data&quot;</span><span class="p">][</span><span class="s2">&quot;system_generated&quot;</span><span class="p">][</span><span class="s2">&quot;risk_classification&quot;</span><span class="p">]</span>
+    <span class="k">return</span> <span class="n">RiskClassificationResponse</span><span class="p">(</span>
+        <span class="n">session_id</span><span class="o">=</span><span class="n">session_id</span><span class="p">,</span>
+        <span class="n">risk_classification</span><span class="o">=</span><span class="n">rc</span><span class="p">,</span>
+    <span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h2 id="app.api.routes.v1.design_template.risk.post_risk" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">post_risk</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">session_id</span><span class="o">=</span><span class="n">Path</span><span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;The ID of the session&#39;</span><span class="p">),</span> <span class="n">manager</span><span class="o">=</span><span class="n">Depends</span><span class="p">(</span><span class="n">get_session_manager</span><span class="p">))</span></code>
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h2>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Update user-confirmed risk classification for a session.</p>
+<p>This endpoint allows users to update the risk classification for a session.
+The provided classification data is merged with the existing user-confirmed data.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>request</code>
+            </td>
+            <td>
+                  <code><span title="regulatory.app.models.risk.RiskClassificationUpdateRequest">RiskClassificationUpdateRequest</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Contains the updated risk classification data.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>session_id</code>
+            </td>
+            <td>
+                  <code><span title="str">str</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The unique identifier for the session.</p>
+              </div>
+            </td>
+            <td>
+                  <code><span title="fastapi.Path">Path</span>(..., description=&#39;The ID of the session&#39;)</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>manager</code>
+            </td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Dependency-injected session manager for state operations.</p>
+              </div>
+            </td>
+            <td>
+                  <code><span title="fastapi.Depends">Depends</span>(<span title="regulatory.app.core.state.get_session_manager">get_session_manager</span>)</code>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+<th>Name</th>          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+<td><code>RiskClassificationUpdateResponse</code></td>            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Contains the session ID and a success message.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+<p><span class="doc-section-title">Raises:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                  <code><span title="fastapi.HTTPException">HTTPException</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>404 if the session is not found.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+<details class="example" open>
+  <summary>Example</summary>
+  <p>POST /risk/{session_id}
+{
+    "risk_classification": {
+        "classification": "Class III",
+        "justification": "High risk device requiring premarket approval."
+    }
+}</p>
+<p>Response:
+{
+    "session_id": "session123",
+    "message": "Risk classifications updated successfully."
+}</p>
+</details>
+
+            <details class="mkdocstrings-source">
+              <summary>Source code in <code>app/api/routes/v1/design_template/risk.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 81</span>
+<span class="normal"> 82</span>
+<span class="normal"> 83</span>
+<span class="normal"> 84</span>
+<span class="normal"> 85</span>
+<span class="normal"> 86</span>
+<span class="normal"> 87</span>
+<span class="normal"> 88</span>
+<span class="normal"> 89</span>
+<span class="normal"> 90</span>
+<span class="normal"> 91</span>
+<span class="normal"> 92</span>
+<span class="normal"> 93</span>
+<span class="normal"> 94</span>
+<span class="normal"> 95</span>
+<span class="normal"> 96</span>
+<span class="normal"> 97</span>
+<span class="normal"> 98</span>
+<span class="normal"> 99</span>
+<span class="normal">100</span>
+<span class="normal">101</span>
+<span class="normal">102</span>
+<span class="normal">103</span>
+<span class="normal">104</span>
+<span class="normal">105</span>
+<span class="normal">106</span>
+<span class="normal">107</span>
+<span class="normal">108</span>
+<span class="normal">109</span>
+<span class="normal">110</span>
+<span class="normal">111</span>
+<span class="normal">112</span>
+<span class="normal">113</span>
+<span class="normal">114</span>
+<span class="normal">115</span>
+<span class="normal">116</span>
+<span class="normal">117</span>
+<span class="normal">118</span>
+<span class="normal">119</span>
+<span class="normal">120</span>
+<span class="normal">121</span>
+<span class="normal">122</span>
+<span class="normal">123</span>
+<span class="normal">124</span>
+<span class="normal">125</span>
+<span class="normal">126</span>
+<span class="normal">127</span>
+<span class="normal">128</span>
+<span class="normal">129</span>
+<span class="normal">130</span>
+<span class="normal">131</span>
+<span class="normal">132</span>
+<span class="normal">133</span>
+<span class="normal">134</span>
+<span class="normal">135</span>
+<span class="normal">136</span>
+<span class="normal">137</span>
+<span class="normal">138</span>
+<span class="normal">139</span>
+<span class="normal">140</span>
+<span class="normal">141</span>
+<span class="normal">142</span>
+<span class="normal">143</span>
+<span class="normal">144</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@router</span><span class="o">.</span><span class="n">post</span><span class="p">(</span>
+    <span class="s2">&quot;/</span><span class="si">{session_id}</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="n">response_model</span><span class="o">=</span><span class="n">RiskClassificationUpdateResponse</span><span class="p">,</span>
+    <span class="n">summary</span><span class="o">=</span><span class="s2">&quot;Update user-confirmed risk classification&quot;</span><span class="p">,</span>
+    <span class="n">name</span><span class="o">=</span><span class="s2">&quot;post_risk&quot;</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">post_risk</span><span class="p">(</span>
+    <span class="n">request</span><span class="p">:</span> <span class="n">RiskClassificationUpdateRequest</span><span class="p">,</span>
+    <span class="n">session_id</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;The ID of the session&quot;</span><span class="p">),</span>
+    <span class="n">manager</span><span class="o">=</span><span class="n">Depends</span><span class="p">(</span><span class="n">get_session_manager</span><span class="p">),</span>
+<span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Update user-confirmed risk classification for a session.</span>
+
+<span class="sd">    This endpoint allows users to update the risk classification for a session.</span>
+<span class="sd">    The provided classification data is merged with the existing user-confirmed data.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        request (RiskClassificationUpdateRequest): Contains the updated risk classification data.</span>
+<span class="sd">        session_id (str): The unique identifier for the session.</span>
+<span class="sd">        manager: Dependency-injected session manager for state operations.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        RiskClassificationUpdateResponse: Contains the session ID and a success message.</span>
+
+<span class="sd">    Raises:</span>
+<span class="sd">        HTTPException: 404 if the session is not found.</span>
+
+<span class="sd">    Example:</span>
+<span class="sd">        POST /risk/{session_id}</span>
+<span class="sd">        {</span>
+<span class="sd">            &quot;risk_classification&quot;: {</span>
+<span class="sd">                &quot;classification&quot;: &quot;Class III&quot;,</span>
+<span class="sd">                &quot;justification&quot;: &quot;High risk device requiring premarket approval.&quot;</span>
+<span class="sd">            }</span>
+<span class="sd">        }</span>
+
+<span class="sd">        Response:</span>
+<span class="sd">        {</span>
+<span class="sd">            &quot;session_id&quot;: &quot;session123&quot;,</span>
+<span class="sd">            &quot;message&quot;: &quot;Risk classifications updated successfully.&quot;</span>
+<span class="sd">        }</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">state</span> <span class="o">=</span> <span class="n">manager</span><span class="o">.</span><span class="n">get_session</span><span class="p">(</span><span class="n">session_id</span><span class="p">)</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">state</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="n">HTTPException</span><span class="p">(</span><span class="n">status_code</span><span class="o">=</span><span class="n">status</span><span class="o">.</span><span class="n">HTTP_404_NOT_FOUND</span><span class="p">,</span> <span class="n">detail</span><span class="o">=</span><span class="s2">&quot;Session not found&quot;</span><span class="p">)</span>
+
+    <span class="n">update_payload</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;design_data&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">&quot;user_confirmed&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s2">&quot;risk_classification&quot;</span><span class="p">:</span> <span class="p">{},</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="n">manager</span><span class="o">.</span><span class="n">update_nested</span><span class="p">(</span><span class="n">session_id</span><span class="p">,</span> <span class="n">update_payload</span><span class="p">)</span>
+
+    <span class="n">state</span><span class="p">[</span><span class="s2">&quot;design_data&quot;</span><span class="p">][</span><span class="s2">&quot;user_confirmed&quot;</span><span class="p">][</span><span class="s2">&quot;risk_classification&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">risk_classification</span><span class="p">)</span>
+    <span class="n">manager</span><span class="o">.</span><span class="n">update_session</span><span class="p">(</span><span class="n">session_id</span><span class="p">,</span> <span class="n">state</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">RiskClassificationUpdateResponse</span><span class="p">(</span>
+        <span class="n">session_id</span><span class="o">=</span><span class="n">session_id</span><span class="p">,</span>
+        <span class="n">message</span><span class="o">=</span><span class="s2">&quot;Risk classifications updated successfully.&quot;</span><span class="p">,</span>
+    <span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+
+
+  </div>
+
+    </div>
+
+</div></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js"></script>
+        <script src="../../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

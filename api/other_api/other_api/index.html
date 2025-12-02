@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Other APIs - Regulatory AI Docs</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../../css/brands.min.css" rel="stylesheet">
+        <link href="../../../css/solid.min.css" rel="stylesheet">
+        <link href="../../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <link href="../../../assets/_mkdocstrings.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">Regulatory AI Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../../getting-started/" class="nav-link">Getting Started</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">API Reference</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../design_template/template_api/" class="dropdown-item">Design Template API</a>
+</li>
+                                    
+<li>
+    <a href="../../gspr_table/gspr_table_api/" class="dropdown-item">GSPR Table API</a>
+</li>
+                                    
+<li>
+    <a href="../../design_input/design_input/" class="dropdown-item">Design Input API</a>
+</li>
+                                    
+<li>
+    <a href="../../design_output/design_output/" class="dropdown-item">Design Output API</a>
+</li>
+                                    
+<li>
+    <a href="../../projects/projects_api/" class="dropdown-item">Projects API</a>
+</li>
+                                    
+<li>
+    <a href="../../session/session_api/" class="dropdown-item">Sessions API</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Other APIs</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Database & Schemas</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../database_and_schemas/databases_overview/" class="dropdown-item">Databases Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../../database_and_schemas/schemas/" class="dropdown-item">APIs Response Schemas</a>
+</li>
+                                    
+<li>
+    <a href="../../../database_and_schemas/other/" class="dropdown-item">Other</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">AI Backend</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../ai_backend/chains_overview/" class="dropdown-item">Chains Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../../ai_backend/agents/" class="dropdown-item">Workflows Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../../ai_backend/graphs/" class="dropdown-item">Graph Nodes</a>
+</li>
+                                    
+<li>
+    <a href="../../../ai_backend/output_models/" class="dropdown-item">Output Models</a>
+</li>
+                                    
+<li>
+    <a href="../../../ai_backend/prompts/" class="dropdown-item">Prompts</a>
+</li>
+                                    
+<li>
+    <a href="../../../ai_backend/others/" class="dropdown-item">Other Modules</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../../faq/" class="nav-link">FAQ</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../../session/session_api/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../../../database_and_schemas/databases_overview/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#core-api-reference" class="nav-link">⚙️ Core API Reference</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#documentation-api-access-platform-docs-metadata" class="nav-link">📘 Documentation API — Access Platform Docs &amp; Metadata</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#app.api.routes.core.docs" class="nav-link">docs</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#health-check-api-system-status-liveness" class="nav-link">🔎 Health Check API — System Status &amp; Liveness</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#app.api.routes.core.health" class="nav-link">health</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#app.api.routes.core.health.health" class="nav-link">health</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#metadata-api-platform-details-runtime-info" class="nav-link">🧬 Metadata API — Platform Details &amp; Runtime Info</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#app.api.routes.core.meta" class="nav-link">meta</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#app.api.routes.core.meta.get_metadata" class="nav-link">get_metadata</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#root-api-base-entry-point" class="nav-link">🏁 Root API — Base Entry Point</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#app.api.routes.core.root" class="nav-link">root</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#model-switching-api" class="nav-link">💡 Model Switching API</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#app.api.routes.v1.models.models" class="nav-link">models</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#app.api.routes.v1.models.models.get_models" class="nav-link">get_models</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#app.api.routes.v1.models.models.set_model" class="nav-link">set_model</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="core-api-reference">⚙️ Core API Reference</h1>
+<p>The <strong>Core API</strong> provides foundational endpoints that support the overall functioning, monitoring, and metadata access for the Regulatory AI platform.</p>
+<p>These endpoints are essential for system introspection, documentation access, and platform health checks.</p>
+<hr />
+<h2 id="documentation-api-access-platform-docs-metadata">📘 Documentation API — Access Platform Docs &amp; Metadata</h2>
+<p>Expose internal or auto-generated documentation endpoints used by the platform.</p>
+
+
+<div class="doc doc-object doc-module">
+
+
+
+<a id="app.api.routes.core.docs"></a>
+    <div class="doc doc-contents first">
+
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div><hr />
+<h2 id="health-check-api-system-status-liveness">🔎 Health Check API — System Status &amp; Liveness</h2>
+<p>Provides lightweight endpoints to verify that the Regulatory AI backend is running, healthy, and ready to serve requests.</p>
+
+
+<div class="doc doc-object doc-module">
+
+
+
+<a id="app.api.routes.core.health"></a>
+    <div class="doc doc-contents first">
+
+        <p>Health-check endpoints.</p>
+<p>This module exposes endpoints to check the application's health and
+basic runtime metrics such as uptime and active session count.</p>
+
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+<h2 id="app.api.routes.core.health.health" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">health</span><span class="p">(</span><span class="n">mongo_db</span><span class="o">=</span><span class="n">Depends</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">get_mongo_db</span><span class="p">),</span> <span class="n">redis</span><span class="o">=</span><span class="n">Depends</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">get_redis</span><span class="p">),</span> <span class="n">neo4j_driver</span><span class="o">=</span><span class="n">Depends</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">get_neo4j_driver</span><span class="p">),</span> <span class="n">milvus_conn</span><span class="o">=</span><span class="n">Depends</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">get_milvus_status</span><span class="p">))</span></code>
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h2>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Return application health information.</p>
+<ul>
+<li><strong>status</strong>: always <code>"healthy"</code> if endpoint responds</li>
+<li><strong>timestamp</strong>: current UTC time</li>
+<li><strong>active_sessions</strong>: number of active sessions in DB</li>
+<li><strong>version</strong>: app version from settings</li>
+<li><strong>uptime_seconds</strong>: process uptime in seconds</li>
+<li><strong>mongo_status</strong>: MongoDB connection status</li>
+<li><strong>redis_status</strong>: Redis connection status</li>
+<li><strong>neo4j_status</strong>: Neo4j connection status</li>
+<li><strong>milvus_status</strong>: Milvus connection status</li>
+</ul>
+
+
+            <details class="mkdocstrings-source">
+              <summary>Source code in <code>app/api/routes/core/health.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span>
+<span class="normal">55</span>
+<span class="normal">56</span>
+<span class="normal">57</span>
+<span class="normal">58</span>
+<span class="normal">59</span>
+<span class="normal">60</span>
+<span class="normal">61</span>
+<span class="normal">62</span>
+<span class="normal">63</span>
+<span class="normal">64</span>
+<span class="normal">65</span>
+<span class="normal">66</span>
+<span class="normal">67</span>
+<span class="normal">68</span>
+<span class="normal">69</span>
+<span class="normal">70</span>
+<span class="normal">71</span>
+<span class="normal">72</span>
+<span class="normal">73</span>
+<span class="normal">74</span>
+<span class="normal">75</span>
+<span class="normal">76</span>
+<span class="normal">77</span>
+<span class="normal">78</span>
+<span class="normal">79</span>
+<span class="normal">80</span>
+<span class="normal">81</span>
+<span class="normal">82</span>
+<span class="normal">83</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@router</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
+    <span class="s2">&quot;/health&quot;</span><span class="p">,</span>
+    <span class="n">response_model</span><span class="o">=</span><span class="n">HealthResponse</span><span class="p">,</span>
+    <span class="n">summary</span><span class="o">=</span><span class="s2">&quot;Health check endpoint&quot;</span><span class="p">,</span>
+    <span class="n">name</span><span class="o">=</span><span class="s2">&quot;health&quot;</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">health</span><span class="p">(</span>
+    <span class="n">mongo_db</span><span class="o">=</span><span class="n">Depends</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">get_mongo_db</span><span class="p">),</span>
+    <span class="n">redis</span><span class="o">=</span><span class="n">Depends</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">get_redis</span><span class="p">),</span>
+    <span class="n">neo4j_driver</span><span class="o">=</span><span class="n">Depends</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">get_neo4j_driver</span><span class="p">),</span>
+    <span class="n">milvus_conn</span><span class="o">=</span><span class="n">Depends</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">get_milvus_status</span><span class="p">),</span>
+<span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Return application health information.</span>
+
+<span class="sd">    - **status**: always `&quot;healthy&quot;` if endpoint responds</span>
+<span class="sd">    - **timestamp**: current UTC time</span>
+<span class="sd">    - **active_sessions**: number of active sessions in DB</span>
+<span class="sd">    - **version**: app version from settings</span>
+<span class="sd">    - **uptime_seconds**: process uptime in seconds</span>
+<span class="sd">    - **mongo_status**: MongoDB connection status</span>
+<span class="sd">    - **redis_status**: Redis connection status</span>
+<span class="sd">    - **neo4j_status**: Neo4j connection status</span>
+<span class="sd">    - **milvus_status**: Milvus connection status</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">now</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">(</span><span class="n">timezone</span><span class="o">.</span><span class="n">utc</span><span class="p">)</span>
+    <span class="n">uptime</span> <span class="o">=</span> <span class="p">(</span><span class="n">now</span> <span class="o">-</span> <span class="n">_start_time</span><span class="p">)</span><span class="o">.</span><span class="n">total_seconds</span><span class="p">()</span>
+
+    <span class="c1"># Ping MongoDB</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">mongo_db</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="s2">&quot;ping&quot;</span><span class="p">)</span>
+        <span class="n">mongo_ok</span> <span class="o">=</span> <span class="kc">True</span>
+    <span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
+        <span class="n">mongo_ok</span> <span class="o">=</span> <span class="kc">False</span>
+
+    <span class="c1"># Ping Redis</span>
+    <span class="n">redis_ok</span> <span class="o">=</span> <span class="n">redis</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">ping</span><span class="p">()</span>
+
+    <span class="c1"># Check Neo4j</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">with</span> <span class="n">neo4j_driver</span><span class="o">.</span><span class="n">session</span><span class="p">()</span> <span class="k">as</span> <span class="n">session</span><span class="p">:</span>
+            <span class="n">session</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="s2">&quot;RETURN 1&quot;</span><span class="p">)</span>
+            <span class="n">session</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+        <span class="n">neo4j_ok</span> <span class="o">=</span> <span class="kc">True</span>
+    <span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
+        <span class="n">neo4j_ok</span> <span class="o">=</span> <span class="kc">False</span>
+
+    <span class="c1"># Check Milvus</span>
+    <span class="n">milvus_ok</span> <span class="o">=</span> <span class="n">milvus_conn</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
+
+    <span class="k">return</span> <span class="n">HealthResponse</span><span class="p">(</span>
+        <span class="n">status</span><span class="o">=</span><span class="s2">&quot;healthy&quot;</span><span class="p">,</span>
+        <span class="n">timestamp</span><span class="o">=</span><span class="n">now</span><span class="o">.</span><span class="n">isoformat</span><span class="p">(),</span>
+        <span class="n">version</span><span class="o">=</span><span class="n">settings</span><span class="o">.</span><span class="n">VERSION</span><span class="p">,</span>
+        <span class="n">uptime_seconds</span><span class="o">=</span><span class="n">uptime</span><span class="p">,</span>
+        <span class="n">mongo_status</span><span class="o">=</span><span class="s2">&quot;ok&quot;</span> <span class="k">if</span> <span class="n">mongo_ok</span> <span class="k">else</span> <span class="s2">&quot;down&quot;</span><span class="p">,</span>
+        <span class="n">redis_status</span><span class="o">=</span><span class="s2">&quot;ok&quot;</span> <span class="k">if</span> <span class="n">redis_ok</span> <span class="k">else</span> <span class="s2">&quot;down&quot;</span><span class="p">,</span>
+        <span class="n">neo4j_status</span><span class="o">=</span><span class="s2">&quot;ok&quot;</span> <span class="k">if</span> <span class="n">neo4j_ok</span> <span class="k">else</span> <span class="s2">&quot;down&quot;</span><span class="p">,</span>
+        <span class="n">milvus_status</span><span class="o">=</span><span class="s2">&quot;ok&quot;</span> <span class="k">if</span> <span class="n">milvus_ok</span> <span class="k">else</span> <span class="s2">&quot;down&quot;</span><span class="p">,</span>
+    <span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+
+
+  </div>
+
+    </div>
+
+</div><hr />
+<h2 id="metadata-api-platform-details-runtime-info">🧬 Metadata API — Platform Details &amp; Runtime Info</h2>
+<p>Returns information such as service version, environment, build data, or runtime configuration.</p>
+
+
+<div class="doc doc-object doc-module">
+
+
+
+<a id="app.api.routes.core.meta"></a>
+    <div class="doc doc-contents first">
+
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+<h2 id="app.api.routes.core.meta.get_metadata" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">get_metadata</span><span class="p">()</span></code>
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h2>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Returns project version, author, license, description.</p>
+
+
+            <details class="mkdocstrings-source">
+              <summary>Source code in <code>app/api/routes/core/meta.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@router</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;/meta&quot;</span><span class="p">,</span> <span class="n">tags</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Meta&quot;</span><span class="p">],</span> <span class="n">summary</span><span class="o">=</span><span class="s2">&quot;Project metadata&quot;</span><span class="p">)</span>
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">get_metadata</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Returns project version, author, license, description.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">metadata_info</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+
+
+  </div>
+
+    </div>
+
+</div><hr />
+<h2 id="root-api-base-entry-point">🏁 Root API — Base Entry Point</h2>
+<p>Handles the platform’s root route (<code>/</code>) providing a welcome message or base status payload.</p>
+
+
+<div class="doc doc-object doc-module">
+
+
+
+<a id="app.api.routes.core.root"></a>
+    <div class="doc doc-contents first">
+
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div><hr />
+<h2 id="model-switching-api">💡 Model Switching API</h2>
+<p>Handles dynamic switching between multiple LLM providers.
+Supports Grok, GPT-4o, Mistral, Gemini, and Claude models.</p>
+
+
+<div class="doc doc-object doc-module">
+
+
+
+<a id="app.api.routes.v1.models.models"></a>
+    <div class="doc doc-contents first">
+
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+<h2 id="app.api.routes.v1.models.models.get_models" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">get_models</span><span class="p">()</span></code>
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h2>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Get all available LLM models and the currently selected model.</p>
+
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+<th>Name</th>          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+<td><code>AvailableModelsResponse</code></td>            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Available models with details and current selection</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+            <details class="mkdocstrings-source">
+              <summary>Source code in <code>app/api/routes/v1/models/models.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@router</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
+    <span class="s2">&quot;/&quot;</span><span class="p">,</span>
+    <span class="n">response_model</span><span class="o">=</span><span class="n">AvailableModelsResponse</span><span class="p">,</span>
+    <span class="n">summary</span><span class="o">=</span><span class="s2">&quot;Get available models&quot;</span><span class="p">,</span>
+    <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Returns a list of available LLM models and the currently selected model.&quot;</span><span class="p">,</span>
+    <span class="n">name</span><span class="o">=</span><span class="s2">&quot;get_models&quot;</span>
+<span class="p">)</span>
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">get_models</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Get all available LLM models and the currently selected model.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        AvailableModelsResponse: Available models with details and current selection</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">available</span> <span class="o">=</span> <span class="n">get_available_models</span><span class="p">()</span>
+        <span class="n">current</span> <span class="o">=</span> <span class="n">get_selected_model</span><span class="p">()</span>
+
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Returned </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">available</span><span class="p">)</span><span class="si">}</span><span class="s2"> available models, current: </span><span class="si">{</span><span class="n">current</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">AvailableModelsResponse</span><span class="p">(</span>
+            <span class="n">models</span><span class="o">=</span><span class="n">available</span><span class="p">,</span>
+            <span class="n">current_model</span><span class="o">=</span><span class="n">current</span>
+        <span class="p">)</span>
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Failed to get models: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">raise</span> <span class="n">HTTPException</span><span class="p">(</span>
+            <span class="n">status_code</span><span class="o">=</span><span class="n">status</span><span class="o">.</span><span class="n">HTTP_500_INTERNAL_SERVER_ERROR</span><span class="p">,</span>
+            <span class="n">detail</span><span class="o">=</span><span class="s2">&quot;Failed to retrieve available models&quot;</span>
+        <span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h2 id="app.api.routes.v1.models.models.set_model" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">set_model</span><span class="p">(</span><span class="n">request</span><span class="p">)</span></code>
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h2>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Set the selected LLM model.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>request</code>
+            </td>
+            <td>
+                  <code><span title="regulatory.app.models.llm_models.SetModelRequest">SetModelRequest</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>SetModelRequest containing the model ID to select</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+<th>Name</th>          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+<td><code>SetModelResponse</code></td>            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Confirmation of the selected model</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+<p><span class="doc-section-title">Raises:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                  <code><span title="fastapi.HTTPException">HTTPException</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>If the model is not available</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+            <details class="mkdocstrings-source">
+              <summary>Source code in <code>app/api/routes/v1/models/models.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span>
+<span class="normal">55</span>
+<span class="normal">56</span>
+<span class="normal">57</span>
+<span class="normal">58</span>
+<span class="normal">59</span>
+<span class="normal">60</span>
+<span class="normal">61</span>
+<span class="normal">62</span>
+<span class="normal">63</span>
+<span class="normal">64</span>
+<span class="normal">65</span>
+<span class="normal">66</span>
+<span class="normal">67</span>
+<span class="normal">68</span>
+<span class="normal">69</span>
+<span class="normal">70</span>
+<span class="normal">71</span>
+<span class="normal">72</span>
+<span class="normal">73</span>
+<span class="normal">74</span>
+<span class="normal">75</span>
+<span class="normal">76</span>
+<span class="normal">77</span>
+<span class="normal">78</span>
+<span class="normal">79</span>
+<span class="normal">80</span>
+<span class="normal">81</span>
+<span class="normal">82</span>
+<span class="normal">83</span>
+<span class="normal">84</span>
+<span class="normal">85</span>
+<span class="normal">86</span>
+<span class="normal">87</span>
+<span class="normal">88</span>
+<span class="normal">89</span>
+<span class="normal">90</span>
+<span class="normal">91</span>
+<span class="normal">92</span>
+<span class="normal">93</span>
+<span class="normal">94</span>
+<span class="normal">95</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@router</span><span class="o">.</span><span class="n">post</span><span class="p">(</span>
+    <span class="s2">&quot;/&quot;</span><span class="p">,</span>
+    <span class="n">response_model</span><span class="o">=</span><span class="n">SetModelResponse</span><span class="p">,</span>
+    <span class="n">summary</span><span class="o">=</span><span class="s2">&quot;Set selected model&quot;</span><span class="p">,</span>
+    <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Sets the model to be used by the LLM service.&quot;</span><span class="p">,</span>
+    <span class="n">name</span><span class="o">=</span><span class="s2">&quot;set_model&quot;</span>
+<span class="p">)</span>
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">set_model</span><span class="p">(</span><span class="n">request</span><span class="p">:</span> <span class="n">SetModelRequest</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Set the selected LLM model.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        request: SetModelRequest containing the model ID to select</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        SetModelResponse: Confirmation of the selected model</span>
+
+<span class="sd">    Raises:</span>
+<span class="sd">        HTTPException: If the model is not available</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">available</span> <span class="o">=</span> <span class="n">get_available_models</span><span class="p">()</span>
+
+        <span class="k">if</span> <span class="n">request</span><span class="o">.</span><span class="n">model</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">available</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">HTTPException</span><span class="p">(</span>
+                <span class="n">status_code</span><span class="o">=</span><span class="n">status</span><span class="o">.</span><span class="n">HTTP_400_BAD_REQUEST</span><span class="p">,</span>
+                <span class="n">detail</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;Model &#39;</span><span class="si">{</span><span class="n">request</span><span class="o">.</span><span class="n">model</span><span class="si">}</span><span class="s2">&#39; is not available. Available models: </span><span class="si">{</span><span class="n">available</span><span class="si">}</span><span class="s2">&quot;</span>
+            <span class="p">)</span>
+
+        <span class="n">set_selected_model</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">model</span><span class="p">)</span>
+
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Model selection changed to: </span><span class="si">{</span><span class="n">request</span><span class="o">.</span><span class="n">model</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">SetModelResponse</span><span class="p">(</span>
+            <span class="n">model</span><span class="o">=</span><span class="n">request</span><span class="o">.</span><span class="n">model</span><span class="p">,</span>
+            <span class="n">message</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;Successfully selected model &#39;</span><span class="si">{</span><span class="n">request</span><span class="o">.</span><span class="n">model</span><span class="si">}</span><span class="s2">&#39;&quot;</span>
+        <span class="p">)</span>
+    <span class="k">except</span> <span class="n">HTTPException</span><span class="p">:</span>
+        <span class="k">raise</span>
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Failed to set model: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">raise</span> <span class="n">HTTPException</span><span class="p">(</span>
+            <span class="n">status_code</span><span class="o">=</span><span class="n">status</span><span class="o">.</span><span class="n">HTTP_500_INTERNAL_SERVER_ERROR</span><span class="p">,</span>
+            <span class="n">detail</span><span class="o">=</span><span class="s2">&quot;Failed to set selected model&quot;</span>
+        <span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+
+
+  </div>
+
+    </div>
+
+</div></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js"></script>
+        <script src="../../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

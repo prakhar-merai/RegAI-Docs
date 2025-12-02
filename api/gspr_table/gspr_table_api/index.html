@@ -1,0 +1,1424 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>GSPR Table API - Regulatory AI Docs</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../../css/brands.min.css" rel="stylesheet">
+        <link href="../../../css/solid.min.css" rel="stylesheet">
+        <link href="../../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <link href="../../../assets/_mkdocstrings.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">Regulatory AI Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../../getting-started/" class="nav-link">Getting Started</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">API Reference</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../design_template/template_api/" class="dropdown-item">Design Template API</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">GSPR Table API</a>
+</li>
+                                    
+<li>
+    <a href="../../design_input/design_input/" class="dropdown-item">Design Input API</a>
+</li>
+                                    
+<li>
+    <a href="../../design_output/design_output/" class="dropdown-item">Design Output API</a>
+</li>
+                                    
+<li>
+    <a href="../../projects/projects_api/" class="dropdown-item">Projects API</a>
+</li>
+                                    
+<li>
+    <a href="../../session/session_api/" class="dropdown-item">Sessions API</a>
+</li>
+                                    
+<li>
+    <a href="../../other_api/other_api/" class="dropdown-item">Other APIs</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Database & Schemas</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../database_and_schemas/databases_overview/" class="dropdown-item">Databases Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../../database_and_schemas/schemas/" class="dropdown-item">APIs Response Schemas</a>
+</li>
+                                    
+<li>
+    <a href="../../../database_and_schemas/other/" class="dropdown-item">Other</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">AI Backend</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../ai_backend/chains_overview/" class="dropdown-item">Chains Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../../ai_backend/agents/" class="dropdown-item">Workflows Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../../ai_backend/graphs/" class="dropdown-item">Graph Nodes</a>
+</li>
+                                    
+<li>
+    <a href="../../../ai_backend/output_models/" class="dropdown-item">Output Models</a>
+</li>
+                                    
+<li>
+    <a href="../../../ai_backend/prompts/" class="dropdown-item">Prompts</a>
+</li>
+                                    
+<li>
+    <a href="../../../ai_backend/others/" class="dropdown-item">Other Modules</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../../faq/" class="nav-link">FAQ</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../../design_template/template_api/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../../design_input/design_input/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#gspr-api-reference" class="nav-link">⚙️ GSPR API Reference</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#gspr-generate-api-create-compliance-tables" class="nav-link">🧾 GSPR Generate API — Create Compliance Tables</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#app.api.routes.v1.gspr_table.gspr_generate_router" class="nav-link">gspr_generate_router</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#app.api.routes.v1.gspr_table.gspr_generate_router.generate_gspr_table" class="nav-link">generate_gspr_table</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#app.api.routes.v1.gspr_table.gspr_generate_router.run_gspr_table_generation" class="nav-link">run_gspr_table_generation</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#gspr-job-status-api-monitor-generation-progress" class="nav-link">📊 GSPR Job Status API — Monitor Generation Progress</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#app.api.routes.v1.gspr_table.gspr_job_status_router" class="nav-link">gspr_job_status_router</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#app.api.routes.v1.gspr_table.gspr_job_status_router.get_job_status" class="nav-link">get_job_status</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#gspr-stream-api-real-time-updates" class="nav-link">🔄 GSPR Stream API — Real-Time Updates</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#app.api.routes.v1.gspr_table.gspr_stream_router" class="nav-link">gspr_stream_router</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#app.api.routes.v1.gspr_table.gspr_stream_router.stream_job" class="nav-link">stream_job</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="gspr-api-reference">⚙️ GSPR API Reference</h1>
+<p>The <strong>GSPR (General Safety and Performance Requirements)</strong> APIs handle automated document generation, real-time job tracking, and streaming updates within the Regulatory AI system.</p>
+<p>Each endpoint below is designed for seamless integration with the design-template workflows.</p>
+<hr />
+<h2 id="gspr-generate-api-create-compliance-tables">🧾 GSPR Generate API — Create Compliance Tables</h2>
+<p>Generates structured <strong>GSPR compliance tables</strong> based on device data, intended purpose, and regulatory mappings.<br />
+This endpoint initiates the document generation workflow and returns a job reference ID.</p>
+
+
+<div class="doc doc-object doc-module">
+
+
+
+<a id="app.api.routes.v1.gspr_table.gspr_generate_router"></a>
+    <div class="doc doc-contents first">
+
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+<h2 id="app.api.routes.v1.gspr_table.gspr_generate_router.generate_gspr_table" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">generate_gspr_table</span><span class="p">(</span><span class="n">background_tasks</span><span class="p">,</span> <span class="n">session_id</span><span class="o">=</span><span class="n">Path</span><span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;The unique session ID from Redis&#39;</span><span class="p">),</span> <span class="n">component</span><span class="o">=</span><span class="n">Query</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Single component to generate sections for (must be user-confirmed).&#39;</span><span class="p">),</span> <span class="n">session_manager</span><span class="o">=</span><span class="n">Depends</span><span class="p">(</span><span class="n">get_session_manager</span><span class="p">),</span> <span class="n">job_manager</span><span class="o">=</span><span class="n">Depends</span><span class="p">(</span><span class="n">get_job_manager</span><span class="p">))</span></code>
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h2>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Start a mock GSPR table generation job for a specific user-confirmed component.</p>
+<h5 id="app.api.routes.v1.gspr_table.gspr_generate_router.generate_gspr_table--overview">Overview</h5>
+<p>This endpoint is responsible for initiating a simulated GSPR generation process
+for one component at a time. It performs multiple validation steps to ensure
+that the session is active and that the requested component exists within the
+user's confirmed components list stored in Redis (<code>design_data.user_confirmed.components</code>).</p>
+<p>Once validated, the endpoint:
+1. Loads GSPR mapping data (<code>grouped_sections.json</code>) from MongoDB.
+2. Creates a unique background job entry using the Job Manager.
+3. Triggers an asynchronous background task to simulate GSPR generation.
+4. Returns job metadata immediately to the client.</p>
+<h5 id="app.api.routes.v1.gspr_table.gspr_generate_router.generate_gspr_table--parameters">Parameters</h5>
+<ul>
+<li><strong>session_id</strong> (<code>str</code>):
+  Unique identifier for the user session stored in Redis.</li>
+<li><strong>component</strong> (<code>Optional[str]</code>):
+  The specific component to process. Must exist in the user’s confirmed components list.
+  Example: <code>?component=PowerModule</code></li>
+<li><strong>background_tasks</strong> (<code>BackgroundTasks</code>):
+  FastAPI background task manager for non-blocking job execution.</li>
+<li><strong>session_manager</strong> (<code>SessionManager</code>):
+  Dependency that interfaces with the Redis-based session state.</li>
+<li><strong>job_manager</strong> (<code>JobManager</code>):
+  Dependency responsible for job creation, progress updates, and event publishing.</li>
+</ul>
+<h5 id="app.api.routes.v1.gspr_table.gspr_generate_router.generate_gspr_table--validation">Validation</h5>
+<ul>
+<li>Raises <code>404</code> if the session ID is not found in Redis.</li>
+<li>Raises <code>400</code> if no component is provided.</li>
+<li>Raises <code>400</code> if the component is not in the confirmed components list.</li>
+</ul>
+<h5 id="app.api.routes.v1.gspr_table.gspr_generate_router.generate_gspr_table--returns">Returns</h5>
+<p>JSON response with:
+- <code>message</code>: Status message confirming job creation.
+- <code>job_id</code>: Unique identifier of the spawned background job.
+- <code>component</code>: The component being processed.
+- <code>stream_url</code>: SSE endpoint for listening to progress updates.</p>
+<h5 id="app.api.routes.v1.gspr_table.gspr_generate_router.generate_gspr_table--example-request">Example Request</h5>
+<pre><code class="language-bash">POST /api/v1/gspr/generate/abc123?component=ECG_Module
+</code></pre>
+<h5 id="app.api.routes.v1.gspr_table.gspr_generate_router.generate_gspr_table--example-response">Example Response</h5>
+<pre><code class="language-json">{
+    &quot;message&quot;: &quot;GSPR generation started successfully for component ECG_Module in session id abc123&quot;,
+    &quot;job_id&quot;: &quot;2b1c4e8d-fb29-4b97-9b4e-cc8d3b42e76e&quot;,
+    &quot;component&quot;: &quot;ECG_Module&quot;,
+    &quot;stream_url&quot;: &quot;/api/v1/gspr/stream/2b1c4e8d-fb29-4b97-9b4e-cc8d3b42e76e&quot;
+}
+</code></pre>
+
+
+            <details class="mkdocstrings-source">
+              <summary>Source code in <code>app/api/routes/v1/gspr_table/gspr_generate_router.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 23</span>
+<span class="normal"> 24</span>
+<span class="normal"> 25</span>
+<span class="normal"> 26</span>
+<span class="normal"> 27</span>
+<span class="normal"> 28</span>
+<span class="normal"> 29</span>
+<span class="normal"> 30</span>
+<span class="normal"> 31</span>
+<span class="normal"> 32</span>
+<span class="normal"> 33</span>
+<span class="normal"> 34</span>
+<span class="normal"> 35</span>
+<span class="normal"> 36</span>
+<span class="normal"> 37</span>
+<span class="normal"> 38</span>
+<span class="normal"> 39</span>
+<span class="normal"> 40</span>
+<span class="normal"> 41</span>
+<span class="normal"> 42</span>
+<span class="normal"> 43</span>
+<span class="normal"> 44</span>
+<span class="normal"> 45</span>
+<span class="normal"> 46</span>
+<span class="normal"> 47</span>
+<span class="normal"> 48</span>
+<span class="normal"> 49</span>
+<span class="normal"> 50</span>
+<span class="normal"> 51</span>
+<span class="normal"> 52</span>
+<span class="normal"> 53</span>
+<span class="normal"> 54</span>
+<span class="normal"> 55</span>
+<span class="normal"> 56</span>
+<span class="normal"> 57</span>
+<span class="normal"> 58</span>
+<span class="normal"> 59</span>
+<span class="normal"> 60</span>
+<span class="normal"> 61</span>
+<span class="normal"> 62</span>
+<span class="normal"> 63</span>
+<span class="normal"> 64</span>
+<span class="normal"> 65</span>
+<span class="normal"> 66</span>
+<span class="normal"> 67</span>
+<span class="normal"> 68</span>
+<span class="normal"> 69</span>
+<span class="normal"> 70</span>
+<span class="normal"> 71</span>
+<span class="normal"> 72</span>
+<span class="normal"> 73</span>
+<span class="normal"> 74</span>
+<span class="normal"> 75</span>
+<span class="normal"> 76</span>
+<span class="normal"> 77</span>
+<span class="normal"> 78</span>
+<span class="normal"> 79</span>
+<span class="normal"> 80</span>
+<span class="normal"> 81</span>
+<span class="normal"> 82</span>
+<span class="normal"> 83</span>
+<span class="normal"> 84</span>
+<span class="normal"> 85</span>
+<span class="normal"> 86</span>
+<span class="normal"> 87</span>
+<span class="normal"> 88</span>
+<span class="normal"> 89</span>
+<span class="normal"> 90</span>
+<span class="normal"> 91</span>
+<span class="normal"> 92</span>
+<span class="normal"> 93</span>
+<span class="normal"> 94</span>
+<span class="normal"> 95</span>
+<span class="normal"> 96</span>
+<span class="normal"> 97</span>
+<span class="normal"> 98</span>
+<span class="normal"> 99</span>
+<span class="normal">100</span>
+<span class="normal">101</span>
+<span class="normal">102</span>
+<span class="normal">103</span>
+<span class="normal">104</span>
+<span class="normal">105</span>
+<span class="normal">106</span>
+<span class="normal">107</span>
+<span class="normal">108</span>
+<span class="normal">109</span>
+<span class="normal">110</span>
+<span class="normal">111</span>
+<span class="normal">112</span>
+<span class="normal">113</span>
+<span class="normal">114</span>
+<span class="normal">115</span>
+<span class="normal">116</span>
+<span class="normal">117</span>
+<span class="normal">118</span>
+<span class="normal">119</span>
+<span class="normal">120</span>
+<span class="normal">121</span>
+<span class="normal">122</span>
+<span class="normal">123</span>
+<span class="normal">124</span>
+<span class="normal">125</span>
+<span class="normal">126</span>
+<span class="normal">127</span>
+<span class="normal">128</span>
+<span class="normal">129</span>
+<span class="normal">130</span>
+<span class="normal">131</span>
+<span class="normal">132</span>
+<span class="normal">133</span>
+<span class="normal">134</span>
+<span class="normal">135</span>
+<span class="normal">136</span>
+<span class="normal">137</span>
+<span class="normal">138</span>
+<span class="normal">139</span>
+<span class="normal">140</span>
+<span class="normal">141</span>
+<span class="normal">142</span>
+<span class="normal">143</span>
+<span class="normal">144</span>
+<span class="normal">145</span>
+<span class="normal">146</span>
+<span class="normal">147</span>
+<span class="normal">148</span>
+<span class="normal">149</span>
+<span class="normal">150</span>
+<span class="normal">151</span>
+<span class="normal">152</span>
+<span class="normal">153</span>
+<span class="normal">154</span>
+<span class="normal">155</span>
+<span class="normal">156</span>
+<span class="normal">157</span>
+<span class="normal">158</span>
+<span class="normal">159</span>
+<span class="normal">160</span>
+<span class="normal">161</span>
+<span class="normal">162</span>
+<span class="normal">163</span>
+<span class="normal">164</span>
+<span class="normal">165</span>
+<span class="normal">166</span>
+<span class="normal">167</span>
+<span class="normal">168</span>
+<span class="normal">169</span>
+<span class="normal">170</span>
+<span class="normal">171</span>
+<span class="normal">172</span>
+<span class="normal">173</span>
+<span class="normal">174</span>
+<span class="normal">175</span>
+<span class="normal">176</span>
+<span class="normal">177</span>
+<span class="normal">178</span>
+<span class="normal">179</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@router</span><span class="o">.</span><span class="n">post</span><span class="p">(</span>
+    <span class="n">path</span><span class="o">=</span><span class="s2">&quot;/generate/</span><span class="si">{session_id}</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="n">summary</span><span class="o">=</span><span class="s2">&quot;Start a new GSPR generation job&quot;</span><span class="p">,</span>
+    <span class="n">status_code</span><span class="o">=</span><span class="n">status</span><span class="o">.</span><span class="n">HTTP_202_ACCEPTED</span><span class="p">,</span>
+    <span class="n">description</span><span class="o">=</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">    Create a new background job for GSPR (General Safety and Performance Requirements) table generation.</span>
+
+<span class="s2">    This endpoint validates the provided session and ensures the specified component is one of the user&#39;s</span>
+<span class="s2">    confirmed components (stored in Redis). Once validated, it spawns a background worker to simulate</span>
+<span class="s2">    asynchronous GSPR table generation and immediately returns job metadata, including a stream URL</span>
+<span class="s2">    for progress updates (SSE).</span>
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">,</span>
+    <span class="n">name</span><span class="o">=</span><span class="s2">&quot;Start GSPR Generation Job&quot;</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">generate_gspr_table</span><span class="p">(</span>
+    <span class="n">background_tasks</span><span class="p">:</span> <span class="n">BackgroundTasks</span><span class="p">,</span>
+    <span class="n">session_id</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;The unique session ID from Redis&quot;</span><span class="p">),</span>
+    <span class="n">component</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="n">Query</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Single component to generate sections for (must be user-confirmed).&quot;</span><span class="p">),</span>
+    <span class="n">session_manager</span><span class="p">:</span> <span class="n">SessionManager</span> <span class="o">=</span> <span class="n">Depends</span><span class="p">(</span><span class="n">get_session_manager</span><span class="p">),</span>
+    <span class="n">job_manager</span><span class="p">:</span> <span class="n">JobManager</span> <span class="o">=</span> <span class="n">Depends</span><span class="p">(</span><span class="n">get_job_manager</span><span class="p">),</span>
+<span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Start a mock GSPR table generation job for a specific user-confirmed component.</span>
+
+<span class="sd">    ### Overview</span>
+<span class="sd">    This endpoint is responsible for initiating a simulated GSPR generation process</span>
+<span class="sd">    for one component at a time. It performs multiple validation steps to ensure</span>
+<span class="sd">    that the session is active and that the requested component exists within the</span>
+<span class="sd">    user&#39;s confirmed components list stored in Redis (`design_data.user_confirmed.components`).</span>
+
+<span class="sd">    Once validated, the endpoint:</span>
+<span class="sd">    1. Loads GSPR mapping data (`grouped_sections.json`) from MongoDB.</span>
+<span class="sd">    2. Creates a unique background job entry using the Job Manager.</span>
+<span class="sd">    3. Triggers an asynchronous background task to simulate GSPR generation.</span>
+<span class="sd">    4. Returns job metadata immediately to the client.</span>
+
+<span class="sd">    ### Parameters</span>
+<span class="sd">    - **session_id** (`str`):</span>
+<span class="sd">      Unique identifier for the user session stored in Redis.</span>
+<span class="sd">    - **component** (`Optional[str]`):</span>
+<span class="sd">      The specific component to process. Must exist in the user’s confirmed components list.</span>
+<span class="sd">      Example: `?component=PowerModule`</span>
+<span class="sd">    - **background_tasks** (`BackgroundTasks`):</span>
+<span class="sd">      FastAPI background task manager for non-blocking job execution.</span>
+<span class="sd">    - **session_manager** (`SessionManager`):</span>
+<span class="sd">      Dependency that interfaces with the Redis-based session state.</span>
+<span class="sd">    - **job_manager** (`JobManager`):</span>
+<span class="sd">      Dependency responsible for job creation, progress updates, and event publishing.</span>
+
+<span class="sd">    ### Validation</span>
+<span class="sd">    - Raises `404` if the session ID is not found in Redis.</span>
+<span class="sd">    - Raises `400` if no component is provided.</span>
+<span class="sd">    - Raises `400` if the component is not in the confirmed components list.</span>
+
+<span class="sd">    ### Returns</span>
+<span class="sd">    JSON response with:</span>
+<span class="sd">    - `message`: Status message confirming job creation.</span>
+<span class="sd">    - `job_id`: Unique identifier of the spawned background job.</span>
+<span class="sd">    - `component`: The component being processed.</span>
+<span class="sd">    - `stream_url`: SSE endpoint for listening to progress updates.</span>
+
+<span class="sd">    ### Example Request</span>
+<span class="sd">    ```bash</span>
+<span class="sd">    POST /api/v1/gspr/generate/abc123?component=ECG_Module</span>
+<span class="sd">    ```</span>
+
+<span class="sd">    ### Example Response</span>
+<span class="sd">    ```json</span>
+<span class="sd">    {</span>
+<span class="sd">        &quot;message&quot;: &quot;GSPR generation started successfully for component ECG_Module in session id abc123&quot;,</span>
+<span class="sd">        &quot;job_id&quot;: &quot;2b1c4e8d-fb29-4b97-9b4e-cc8d3b42e76e&quot;,</span>
+<span class="sd">        &quot;component&quot;: &quot;ECG_Module&quot;,</span>
+<span class="sd">        &quot;stream_url&quot;: &quot;/api/v1/gspr/stream/2b1c4e8d-fb29-4b97-9b4e-cc8d3b42e76e&quot;</span>
+<span class="sd">    }</span>
+<span class="sd">    ```</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[API] Incoming GSPR generation request | session_id=</span><span class="si">{</span><span class="n">session_id</span><span class="si">}</span><span class="s2">, component=</span><span class="si">{</span><span class="n">component</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Validate session exists</span>
+    <span class="n">state</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">dict</span><span class="p">]</span> <span class="o">=</span> <span class="n">session_manager</span><span class="o">.</span><span class="n">get_session</span><span class="p">(</span><span class="n">session_id</span><span class="p">)</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">state</span><span class="p">:</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[API] Session not found in Redis | session_id=</span><span class="si">{</span><span class="n">session_id</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">raise</span> <span class="n">HTTPException</span><span class="p">(</span>
+            <span class="n">status_code</span><span class="o">=</span><span class="n">status</span><span class="o">.</span><span class="n">HTTP_404_NOT_FOUND</span><span class="p">,</span>
+            <span class="n">detail</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;Session </span><span class="si">{</span><span class="n">session_id</span><span class="si">}</span><span class="s2"> not found in Redis.&quot;</span><span class="p">,</span>
+        <span class="p">)</span>
+
+    <span class="c1"># Extract confirmed components</span>
+    <span class="n">confirmed_components</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="n">state</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;design_data&quot;</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;user_confirmed&quot;</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;components&quot;</span><span class="p">,</span> <span class="p">[])</span>
+    <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[API] Confirmed components retrieved from session | session_id=</span><span class="si">{</span><span class="n">session_id</span><span class="si">}</span><span class="s2">, confirmed=</span><span class="si">{</span><span class="n">confirmed_components</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Require a specific component</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">component</span><span class="p">:</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[API] No component provided in request | session_id=</span><span class="si">{</span><span class="n">session_id</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">raise</span> <span class="n">HTTPException</span><span class="p">(</span>
+            <span class="n">status_code</span><span class="o">=</span><span class="n">status</span><span class="o">.</span><span class="n">HTTP_400_BAD_REQUEST</span><span class="p">,</span>
+            <span class="n">detail</span><span class="o">=</span><span class="s2">&quot;No component specified. Please provide ?component=&lt;component_name&gt;.&quot;</span><span class="p">,</span>
+        <span class="p">)</span>
+
+    <span class="c1"># Validate against confirmed components</span>
+    <span class="k">if</span> <span class="n">component</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">confirmed_components</span><span class="p">:</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[API] Component not found in confirmed list | session_id=</span><span class="si">{</span><span class="n">session_id</span><span class="si">}</span><span class="s2">, component=</span><span class="si">{</span><span class="n">component</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">raise</span> <span class="n">HTTPException</span><span class="p">(</span>
+            <span class="n">status_code</span><span class="o">=</span><span class="n">status</span><span class="o">.</span><span class="n">HTTP_400_BAD_REQUEST</span><span class="p">,</span>
+            <span class="n">detail</span><span class="o">=</span><span class="p">{</span>
+                <span class="s2">&quot;message&quot;</span><span class="p">:</span> <span class="sa">f</span><span class="s2">&quot;Component &#39;</span><span class="si">{</span><span class="n">component</span><span class="si">}</span><span class="s2">&#39; not found in user&#39;s confirmed list.&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;confirmed_components&quot;</span><span class="p">:</span> <span class="n">confirmed_components</span><span class="p">,</span>
+            <span class="p">},</span>
+        <span class="p">)</span>
+
+    <span class="c1"># Create a new job ID</span>
+    <span class="n">job_id</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">uuid4</span><span class="p">())</span>
+
+    <span class="c1"># Fetch grouped sections from MongoDB collection gspr_mapping</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">requirement_sections</span> <span class="o">=</span> <span class="n">mongo_db</span><span class="o">.</span><span class="n">load_json_asset</span><span class="p">(</span><span class="s2">&quot;grouped_sections.json&quot;</span><span class="p">,</span> <span class="n">collection_name</span><span class="o">=</span><span class="s2">&quot;gspr_mapping&quot;</span><span class="p">)</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[API] Loaded grouped_sections from MongoDB | collection=gspr_mapping, count=</span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">requirement_sections</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">ValueError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[API] Failed to load grouped_sections | error=</span><span class="si">{</span><span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">raise</span> <span class="n">HTTPException</span><span class="p">(</span><span class="n">status_code</span><span class="o">=</span><span class="n">status</span><span class="o">.</span><span class="n">HTTP_400_BAD_REQUEST</span><span class="p">,</span> <span class="n">detail</span><span class="o">=</span><span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">))</span>
+
+    <span class="n">total_sections</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">sections</span><span class="p">)</span> <span class="k">for</span> <span class="n">sections</span> <span class="ow">in</span> <span class="n">requirement_sections</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+
+    <span class="c1"># Create a new job ID</span>
+    <span class="n">job_id</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">uuid4</span><span class="p">())</span>
+    <span class="n">job_manager</span><span class="o">.</span><span class="n">create_job</span><span class="p">(</span><span class="n">job_id</span><span class="p">,</span> <span class="n">total_sections</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[API] Created job </span><span class="si">{</span><span class="n">job_id</span><span class="si">}</span><span class="s2"> with </span><span class="si">{</span><span class="n">total_sections</span><span class="si">}</span><span class="s2"> sections for session </span><span class="si">{</span><span class="n">session_id</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[API] Created new GSPR job | job_id=</span><span class="si">{</span><span class="n">job_id</span><span class="si">}</span><span class="s2">, session_id=</span><span class="si">{</span><span class="n">session_id</span><span class="si">}</span><span class="s2">, component=</span><span class="si">{</span><span class="n">component</span><span class="si">}</span><span class="s2">, total_sections=</span><span class="si">{</span><span class="n">total_sections</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="c1"># Launch async background generation</span>
+
+    <span class="n">all_sections</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">req_type</span><span class="p">,</span> <span class="n">sections</span> <span class="ow">in</span> <span class="n">requirement_sections</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="k">for</span> <span class="n">section</span> <span class="ow">in</span> <span class="n">sections</span><span class="p">:</span>
+            <span class="n">section</span><span class="p">[</span><span class="s2">&quot;requirement_type&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">req_type</span>
+            <span class="n">all_sections</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">section</span><span class="p">)</span>
+
+    <span class="n">background_tasks</span><span class="o">.</span><span class="n">add_task</span><span class="p">(</span>
+        <span class="n">run_gspr_table_generation</span><span class="p">,</span>
+        <span class="n">component</span><span class="p">,</span>
+        <span class="n">session_id</span><span class="p">,</span>
+        <span class="n">job_id</span><span class="p">,</span>
+        <span class="n">requirement_sections</span><span class="p">,</span>
+        <span class="n">all_sections</span><span class="p">,</span>
+    <span class="p">)</span>
+    <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[API] Background GSPR generation task scheduled | job_id=</span><span class="si">{</span><span class="n">job_id</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="k">del</span> <span class="n">requirement_sections</span>  <span class="c1"># free memory</span>
+    <span class="k">del</span> <span class="n">total_sections</span>  <span class="c1"># free memory</span>
+    <span class="k">del</span> <span class="n">state</span>  <span class="c1"># free memory</span>
+
+    <span class="k">return</span> <span class="p">{</span>
+        <span class="s2">&quot;message&quot;</span><span class="p">:</span> <span class="sa">f</span><span class="s2">&quot;GSPR generation started successfully for component </span><span class="si">{</span><span class="n">component</span><span class="si">}</span><span class="s2"> in session id </span><span class="si">{</span><span class="n">session_id</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;job_id&quot;</span><span class="p">:</span> <span class="n">job_id</span><span class="p">,</span>
+        <span class="s2">&quot;component&quot;</span><span class="p">:</span> <span class="n">component</span><span class="p">,</span>
+        <span class="s2">&quot;stream_url&quot;</span><span class="p">:</span> <span class="sa">f</span><span class="s2">&quot;/api/v1/gspr/stream/</span><span class="si">{</span><span class="n">job_id</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h2 id="app.api.routes.v1.gspr_table.gspr_generate_router.run_gspr_table_generation" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">run_gspr_table_generation</span><span class="p">(</span><span class="n">component</span><span class="p">,</span> <span class="n">session_id</span><span class="p">,</span> <span class="n">job_id</span><span class="p">,</span> <span class="n">requirement_sections</span><span class="p">,</span> <span class="n">all_sections</span><span class="p">)</span></code>
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h2>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Asynchronously generates a GSPR table using the GSPRGraphRunner for production.</p>
+<p>This function processes all sections through the LangGraph workflow,
+using the GSPRGraphRunner to orchestrate AI-powered analysis of regulatory
+compliance requirements.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>component_name</code>
+            </td>
+            <td>
+                  <code><span title="str">str</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Name of the medical device component</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>session_id</code>
+            </td>
+            <td>
+                  <code><span title="str">str</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Unique identifier for the user session</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>job_id</code>
+            </td>
+            <td>
+                  <code><span title="str">str</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Unique identifier for the background job</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>all_sections</code>
+            </td>
+            <td>
+                  <code><span title="list">list</span>[<span title="dict">dict</span>]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>List of all section dictionaries to process</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+            <details class="mkdocstrings-source">
+              <summary>Source code in <code>app/api/routes/v1/gspr_table/gspr_generate_router.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">185</span>
+<span class="normal">186</span>
+<span class="normal">187</span>
+<span class="normal">188</span>
+<span class="normal">189</span>
+<span class="normal">190</span>
+<span class="normal">191</span>
+<span class="normal">192</span>
+<span class="normal">193</span>
+<span class="normal">194</span>
+<span class="normal">195</span>
+<span class="normal">196</span>
+<span class="normal">197</span>
+<span class="normal">198</span>
+<span class="normal">199</span>
+<span class="normal">200</span>
+<span class="normal">201</span>
+<span class="normal">202</span>
+<span class="normal">203</span>
+<span class="normal">204</span>
+<span class="normal">205</span>
+<span class="normal">206</span>
+<span class="normal">207</span>
+<span class="normal">208</span>
+<span class="normal">209</span>
+<span class="normal">210</span>
+<span class="normal">211</span>
+<span class="normal">212</span>
+<span class="normal">213</span>
+<span class="normal">214</span>
+<span class="normal">215</span>
+<span class="normal">216</span>
+<span class="normal">217</span>
+<span class="normal">218</span>
+<span class="normal">219</span>
+<span class="normal">220</span>
+<span class="normal">221</span>
+<span class="normal">222</span>
+<span class="normal">223</span>
+<span class="normal">224</span>
+<span class="normal">225</span>
+<span class="normal">226</span>
+<span class="normal">227</span>
+<span class="normal">228</span>
+<span class="normal">229</span>
+<span class="normal">230</span>
+<span class="normal">231</span>
+<span class="normal">232</span>
+<span class="normal">233</span>
+<span class="normal">234</span>
+<span class="normal">235</span>
+<span class="normal">236</span>
+<span class="normal">237</span>
+<span class="normal">238</span>
+<span class="normal">239</span>
+<span class="normal">240</span>
+<span class="normal">241</span>
+<span class="normal">242</span>
+<span class="normal">243</span>
+<span class="normal">244</span>
+<span class="normal">245</span>
+<span class="normal">246</span>
+<span class="normal">247</span>
+<span class="normal">248</span>
+<span class="normal">249</span>
+<span class="normal">250</span>
+<span class="normal">251</span>
+<span class="normal">252</span>
+<span class="normal">253</span>
+<span class="normal">254</span>
+<span class="normal">255</span>
+<span class="normal">256</span>
+<span class="normal">257</span>
+<span class="normal">258</span>
+<span class="normal">259</span>
+<span class="normal">260</span>
+<span class="normal">261</span>
+<span class="normal">262</span>
+<span class="normal">263</span>
+<span class="normal">264</span>
+<span class="normal">265</span>
+<span class="normal">266</span>
+<span class="normal">267</span>
+<span class="normal">268</span>
+<span class="normal">269</span>
+<span class="normal">270</span>
+<span class="normal">271</span>
+<span class="normal">272</span>
+<span class="normal">273</span>
+<span class="normal">274</span>
+<span class="normal">275</span>
+<span class="normal">276</span>
+<span class="normal">277</span>
+<span class="normal">278</span>
+<span class="normal">279</span>
+<span class="normal">280</span>
+<span class="normal">281</span>
+<span class="normal">282</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">run_gspr_table_generation</span><span class="p">(</span>
+    <span class="n">component</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+    <span class="n">session_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+    <span class="n">job_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+    <span class="n">requirement_sections</span><span class="p">:</span> <span class="nb">dict</span><span class="p">,</span>
+    <span class="n">all_sections</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">dict</span><span class="p">],</span>
+<span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Asynchronously generates a GSPR table using the GSPRGraphRunner for production.</span>
+
+<span class="sd">    This function processes all sections through the LangGraph workflow,</span>
+<span class="sd">    using the GSPRGraphRunner to orchestrate AI-powered analysis of regulatory</span>
+<span class="sd">    compliance requirements.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        component_name (str): Name of the medical device component</span>
+<span class="sd">        session_id (str): Unique identifier for the user session</span>
+<span class="sd">        job_id (str): Unique identifier for the background job</span>
+<span class="sd">        all_sections (list[dict]): List of all section dictionaries to process</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">session_manager</span><span class="p">:</span> <span class="n">SessionManager</span> <span class="o">=</span> <span class="n">get_session_manager</span><span class="p">()</span>
+    <span class="n">job_manager</span><span class="p">:</span> <span class="n">JobManager</span> <span class="o">=</span> <span class="n">get_job_manager</span><span class="p">()</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[Worker] Job </span><span class="si">{</span><span class="n">job_id</span><span class="si">}</span><span class="s2"> started at </span><span class="si">{</span><span class="n">time</span><span class="o">.</span><span class="n">ctime</span><span class="p">()</span><span class="si">}</span><span class="s2"> for session </span><span class="si">{</span><span class="n">session_id</span><span class="si">}</span><span class="s2"> for component </span><span class="si">{</span><span class="n">component</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[Worker] Starting GSPR generation job | job_id=</span><span class="si">{</span><span class="n">job_id</span><span class="si">}</span><span class="s2">, session_id=</span><span class="si">{</span><span class="n">session_id</span><span class="si">}</span><span class="s2">, component=</span><span class="si">{</span><span class="n">component</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="k">try</span><span class="p">:</span>
+        <span class="c1"># Initialize the GSPRGraphRunner</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[Worker] Initializing GSPRGraphRunner for job </span><span class="si">{</span><span class="n">job_id</span><span class="si">}</span><span class="s2">...&quot;</span><span class="p">)</span>
+
+        <span class="n">runner</span> <span class="o">=</span> <span class="n">GSPRGraphRunner</span><span class="p">(</span>
+            <span class="n">session_id</span><span class="o">=</span><span class="n">session_id</span><span class="p">,</span>
+            <span class="n">job_id</span><span class="o">=</span><span class="n">job_id</span><span class="p">,</span>
+            <span class="n">component_name</span><span class="o">=</span><span class="n">component</span><span class="p">,</span>
+            <span class="n">requirement_sections</span><span class="o">=</span><span class="n">requirement_sections</span><span class="p">,</span>
+        <span class="p">)</span>
+
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[Worker] GSPRGraphRunner initialized, starting workflow for job </span><span class="si">{</span><span class="n">job_id</span><span class="si">}</span><span class="s2">...&quot;</span><span class="p">)</span>
+
+        <span class="c1"># Run the production workflow</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="k">await</span> <span class="n">runner</span><span class="o">.</span><span class="n">run_all_sections</span><span class="p">(</span><span class="n">sections</span><span class="o">=</span><span class="n">all_sections</span><span class="p">)</span>
+
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[Worker] Workflow completed for job </span><span class="si">{</span><span class="n">job_id</span><span class="si">}</span><span class="s2">, success: </span><span class="si">{</span><span class="n">result</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;success&#39;</span><span class="p">,</span><span class="w"> </span><span class="kc">False</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">result</span><span class="p">[</span><span class="s2">&quot;success&quot;</span><span class="p">]:</span>
+            <span class="n">job_manager</span><span class="o">.</span><span class="n">mark_completed</span><span class="p">(</span><span class="n">job_id</span><span class="p">)</span>
+            <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[Worker] Job </span><span class="si">{</span><span class="n">job_id</span><span class="si">}</span><span class="s2"> completed successfully at </span><span class="si">{</span><span class="n">time</span><span class="o">.</span><span class="n">ctime</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+            <span class="c1"># Update Redis session with generated results</span>
+            <span class="n">session_manager</span><span class="o">.</span><span class="n">update_nested</span><span class="p">(</span>
+                <span class="n">session_id</span><span class="p">,</span>
+                <span class="p">{</span>
+                    <span class="s2">&quot;gspr_results&quot;</span><span class="p">:</span> <span class="p">{</span>
+                        <span class="s2">&quot;job_id&quot;</span><span class="p">:</span> <span class="n">job_id</span><span class="p">,</span>
+                        <span class="s2">&quot;status&quot;</span><span class="p">:</span> <span class="s2">&quot;completed&quot;</span><span class="p">,</span>
+                        <span class="s2">&quot;total_sections&quot;</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">all_sections</span><span class="p">),</span>
+                        <span class="s2">&quot;failed_sections&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+                        <span class="s2">&quot;sections&quot;</span><span class="p">:</span> <span class="n">result</span><span class="p">[</span><span class="s2">&quot;results&quot;</span><span class="p">],</span>
+                        <span class="s2">&quot;component_name&quot;</span><span class="p">:</span> <span class="n">component</span><span class="p">,</span>
+                    <span class="p">}</span>
+                <span class="p">},</span>
+            <span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">job_manager</span><span class="o">.</span><span class="n">mark_completed</span><span class="p">(</span><span class="n">job_id</span><span class="p">,</span> <span class="n">failed</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+            <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[Worker] Job </span><span class="si">{</span><span class="n">job_id</span><span class="si">}</span><span class="s2"> failed at </span><span class="si">{</span><span class="n">time</span><span class="o">.</span><span class="n">ctime</span><span class="p">()</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">result</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;error&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Unknown error&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+            <span class="c1"># Update session with error info</span>
+            <span class="n">session_manager</span><span class="o">.</span><span class="n">update_nested</span><span class="p">(</span>
+                <span class="n">session_id</span><span class="p">,</span>
+                <span class="p">{</span>
+                    <span class="s2">&quot;gspr_results&quot;</span><span class="p">:</span> <span class="p">{</span>
+                        <span class="s2">&quot;job_id&quot;</span><span class="p">:</span> <span class="n">job_id</span><span class="p">,</span>
+                        <span class="s2">&quot;status&quot;</span><span class="p">:</span> <span class="s2">&quot;failed&quot;</span><span class="p">,</span>
+                        <span class="s2">&quot;error&quot;</span><span class="p">:</span> <span class="n">result</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;error&quot;</span><span class="p">,</span> <span class="s2">&quot;Unknown error&quot;</span><span class="p">),</span>
+                        <span class="s2">&quot;component_name&quot;</span><span class="p">:</span> <span class="n">component</span><span class="p">,</span>
+                    <span class="p">}</span>
+                <span class="p">},</span>
+            <span class="p">)</span>
+
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[Worker] Unexpected error in job </span><span class="si">{</span><span class="n">job_id</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">job_manager</span><span class="o">.</span><span class="n">mark_completed</span><span class="p">(</span><span class="n">job_id</span><span class="p">,</span> <span class="n">failed</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+        <span class="c1"># Update session with error info</span>
+        <span class="n">session_manager</span><span class="o">.</span><span class="n">update_nested</span><span class="p">(</span>
+            <span class="n">session_id</span><span class="p">,</span>
+            <span class="p">{</span>
+                <span class="s2">&quot;gspr_results&quot;</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="s2">&quot;job_id&quot;</span><span class="p">:</span> <span class="n">job_id</span><span class="p">,</span>
+                    <span class="s2">&quot;status&quot;</span><span class="p">:</span> <span class="s2">&quot;failed&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;error&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">),</span>
+                    <span class="s2">&quot;component_name&quot;</span><span class="p">:</span> <span class="n">component</span><span class="p">,</span>
+                <span class="p">}</span>
+            <span class="p">},</span>
+        <span class="p">)</span>
+
+    <span class="c1"># Clean up memory</span>
+    <span class="k">del</span> <span class="n">all_sections</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+
+
+  </div>
+
+    </div>
+
+</div><hr />
+<h2 id="gspr-job-status-api-monitor-generation-progress">📊 GSPR Job Status API — Monitor Generation Progress</h2>
+<p>Tracks the <strong>status of ongoing or completed GSPR generation jobs</strong>.<br />
+Useful for polling job states, retrieving metadata, or confirming successful completion of background processes.</p>
+
+
+<div class="doc doc-object doc-module">
+
+
+
+<a id="app.api.routes.v1.gspr_table.gspr_job_status_router"></a>
+    <div class="doc doc-contents first">
+
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+<h2 id="app.api.routes.v1.gspr_table.gspr_job_status_router.get_job_status" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">get_job_status</span><span class="p">(</span><span class="n">job_id</span><span class="o">=</span><span class="n">Path</span><span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Job ID to retrieve status for&#39;</span><span class="p">),</span> <span class="n">job_manager</span><span class="o">=</span><span class="n">Depends</span><span class="p">(</span><span class="n">get_job_manager</span><span class="p">))</span></code>
+
+</h2>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Fetch the current job progress snapshot from Redis.</p>
+
+
+<details class="data-source" open>
+  <summary>Data source</summary>
+  <ul>
+<li>job:{job_id}:progress (Redis JSON key)</li>
+</ul>
+</details>
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <ul>
+<li>completed, failed, pending counts</li>
+</ul>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <ul>
+<li>percent progress</li>
+</ul>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <ul>
+<li>status (running/completed/failed)</li>
+</ul>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <ul>
+<li>timestamps (started_at, finished_at)</li>
+</ul>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+            <details class="mkdocstrings-source">
+              <summary>Source code in <code>app/api/routes/v1/gspr_table/gspr_job_status_router.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@router</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
+    <span class="n">path</span><span class="o">=</span><span class="s2">&quot;/job/</span><span class="si">{job_id}</span><span class="s2">/status&quot;</span><span class="p">,</span>
+    <span class="n">summary</span><span class="o">=</span><span class="s2">&quot;Get current job progress snapshot&quot;</span><span class="p">,</span>
+    <span class="n">status_code</span><span class="o">=</span><span class="n">status</span><span class="o">.</span><span class="n">HTTP_200_OK</span><span class="p">,</span>
+    <span class="n">response_description</span><span class="o">=</span><span class="s2">&quot;Current job progress state stored in Redis.&quot;</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">get_job_status</span><span class="p">(</span>
+    <span class="n">job_id</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Job ID to retrieve status for&quot;</span><span class="p">),</span>
+    <span class="n">job_manager</span><span class="p">:</span> <span class="n">JobManager</span> <span class="o">=</span> <span class="n">Depends</span><span class="p">(</span><span class="n">get_job_manager</span><span class="p">),</span>
+<span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Fetch the current job progress snapshot from Redis.</span>
+
+<span class="sd">    Data source:</span>
+<span class="sd">        - job:{job_id}:progress (Redis JSON key)</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        - completed, failed, pending counts</span>
+<span class="sd">        - percent progress</span>
+<span class="sd">        - status (running/completed/failed)</span>
+<span class="sd">        - timestamps (started_at, finished_at)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">progress</span> <span class="o">=</span> <span class="n">job_manager</span><span class="o">.</span><span class="n">get_progress</span><span class="p">(</span><span class="n">job_id</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">progress</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="n">HTTPException</span><span class="p">(</span>
+            <span class="n">status_code</span><span class="o">=</span><span class="n">status</span><span class="o">.</span><span class="n">HTTP_404_NOT_FOUND</span><span class="p">,</span>
+            <span class="n">detail</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;Job </span><span class="si">{</span><span class="n">job_id</span><span class="si">}</span><span class="s2"> not found or expired in Redis.&quot;</span><span class="p">,</span>
+        <span class="p">)</span>
+
+    <span class="k">return</span> <span class="p">{</span>
+        <span class="s2">&quot;job_id&quot;</span><span class="p">:</span> <span class="n">job_id</span><span class="p">,</span>
+        <span class="s2">&quot;status&quot;</span><span class="p">:</span> <span class="n">progress</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;status&quot;</span><span class="p">),</span>
+        <span class="s2">&quot;completed&quot;</span><span class="p">:</span> <span class="n">progress</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;completed&quot;</span><span class="p">),</span>
+        <span class="s2">&quot;failed&quot;</span><span class="p">:</span> <span class="n">progress</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;failed&quot;</span><span class="p">),</span>
+        <span class="s2">&quot;pending&quot;</span><span class="p">:</span> <span class="n">progress</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;pending&quot;</span><span class="p">),</span>
+        <span class="s2">&quot;percent&quot;</span><span class="p">:</span> <span class="n">progress</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;percent&quot;</span><span class="p">),</span>
+        <span class="s2">&quot;started_at&quot;</span><span class="p">:</span> <span class="n">progress</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;started_at&quot;</span><span class="p">),</span>
+        <span class="s2">&quot;finished_at&quot;</span><span class="p">:</span> <span class="n">progress</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;finished_at&quot;</span><span class="p">),</span>
+        <span class="s2">&quot;total_time&quot;</span><span class="p">:</span> <span class="n">progress</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;total_time&quot;</span><span class="p">),</span>
+    <span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+
+
+  </div>
+
+    </div>
+
+</div><hr />
+<h2 id="gspr-stream-api-real-time-updates">🔄 GSPR Stream API — Real-Time Updates</h2>
+<p>Streams <strong>live progress updates and events</strong> for long-running GSPR table generation tasks.<br />
+Ideal for dashboards or clients requiring real-time feedback on document creation pipelines.</p>
+
+
+<div class="doc doc-object doc-module">
+
+
+
+<a id="app.api.routes.v1.gspr_table.gspr_stream_router"></a>
+    <div class="doc doc-contents first">
+
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+<h2 id="app.api.routes.v1.gspr_table.gspr_stream_router.stream_job" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">stream_job</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">job_id</span><span class="o">=</span><span class="n">Path</span><span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Job ID to stream events for&#39;</span><span class="p">),</span> <span class="n">redis</span><span class="o">=</span><span class="n">Depends</span><span class="p">(</span><span class="k">lambda</span><span class="p">:</span> <span class="n">get_redis</span><span class="p">(</span><span class="n">async_mode</span><span class="o">=</span><span class="kc">True</span><span class="p">)))</span></code>
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h2>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Server-Sent Events (SSE) endpoint that streams live progress updates
+for a given GSPR generation job.</p>
+
+
+<details class="data-flow" open>
+  <summary>Data Flow</summary>
+  <p>LangGraph Worker → JobManager.events._publish()
+      ↓
+  Redis Pub/Sub (event:{job_id}:stream)
+      ↓
+  FastAPI /gspr/stream/{job_id}
+      ↓
+  Node backend or browser (EventSource)</p>
+</details>
+
+            <details class="mkdocstrings-source">
+              <summary>Source code in <code>app/api/routes/v1/gspr_table/gspr_stream_router.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span>
+<span class="normal">55</span>
+<span class="normal">56</span>
+<span class="normal">57</span>
+<span class="normal">58</span>
+<span class="normal">59</span>
+<span class="normal">60</span>
+<span class="normal">61</span>
+<span class="normal">62</span>
+<span class="normal">63</span>
+<span class="normal">64</span>
+<span class="normal">65</span>
+<span class="normal">66</span>
+<span class="normal">67</span>
+<span class="normal">68</span>
+<span class="normal">69</span>
+<span class="normal">70</span>
+<span class="normal">71</span>
+<span class="normal">72</span>
+<span class="normal">73</span>
+<span class="normal">74</span>
+<span class="normal">75</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@router</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
+    <span class="n">path</span><span class="o">=</span><span class="s2">&quot;/stream/</span><span class="si">{job_id}</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="n">summary</span><span class="o">=</span><span class="s2">&quot;Stream real-time GSPR job progress via Server-Sent Events (SSE)&quot;</span><span class="p">,</span>
+    <span class="n">response_class</span><span class="o">=</span><span class="n">StreamingResponse</span><span class="p">,</span>
+    <span class="n">status_code</span><span class="o">=</span><span class="n">status</span><span class="o">.</span><span class="n">HTTP_200_OK</span><span class="p">,</span>
+    <span class="n">description</span><span class="o">=</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">    Subscribes to the Redis Pub/Sub channel `event:</span><span class="si">{job_id}</span><span class="s2">:stream`</span>
+<span class="s2">    and streams real-time job progress updates as Server-Sent Events (SSE).</span>
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">stream_job</span><span class="p">(</span>
+    <span class="n">request</span><span class="p">:</span> <span class="n">Request</span><span class="p">,</span>
+    <span class="n">job_id</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Job ID to stream events for&quot;</span><span class="p">),</span>
+    <span class="n">redis</span><span class="p">:</span> <span class="n">AsyncRedisDB</span> <span class="o">=</span> <span class="n">Depends</span><span class="p">(</span><span class="k">lambda</span><span class="p">:</span> <span class="n">get_redis</span><span class="p">(</span><span class="n">async_mode</span><span class="o">=</span><span class="kc">True</span><span class="p">)),</span>
+<span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Server-Sent Events (SSE) endpoint that streams live progress updates</span>
+<span class="sd">    for a given GSPR generation job.</span>
+
+<span class="sd">    Data Flow:</span>
+<span class="sd">        LangGraph Worker → JobManager.events._publish()</span>
+<span class="sd">              ↓</span>
+<span class="sd">          Redis Pub/Sub (event:{job_id}:stream)</span>
+<span class="sd">              ↓</span>
+<span class="sd">          FastAPI /gspr/stream/{job_id}</span>
+<span class="sd">              ↓</span>
+<span class="sd">          Node backend or browser (EventSource)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">channel_name</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;event:</span><span class="si">{</span><span class="n">job_id</span><span class="si">}</span><span class="s2">:stream&quot;</span>
+
+    <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">event_generator</span><span class="p">():</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[SSE] Client connected to </span><span class="si">{</span><span class="n">channel_name</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="k">async</span> <span class="k">for</span> <span class="n">raw_message</span> <span class="ow">in</span> <span class="n">redis</span><span class="o">.</span><span class="n">subscribe</span><span class="p">(</span><span class="n">channel_name</span><span class="p">):</span>
+                <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[SSE] Received message from </span><span class="si">{</span><span class="n">channel_name</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+                <span class="c1"># Handle disconnects</span>
+                <span class="k">if</span> <span class="k">await</span> <span class="n">request</span><span class="o">.</span><span class="n">is_disconnected</span><span class="p">():</span>
+                    <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[SSE] Client disconnected from </span><span class="si">{</span><span class="n">channel_name</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+                    <span class="k">break</span>
+                <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[SSE] Publishing message from </span><span class="si">{</span><span class="n">channel_name</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+                <span class="c1"># Parse Redis message</span>
+                <span class="k">try</span><span class="p">:</span>
+                    <span class="n">payload</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">raw_message</span><span class="p">)</span>
+                    <span class="n">event_type</span> <span class="o">=</span> <span class="n">payload</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;event&quot;</span><span class="p">,</span> <span class="s2">&quot;message&quot;</span><span class="p">)</span>
+                    <span class="n">data</span> <span class="o">=</span> <span class="n">payload</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;data&quot;</span><span class="p">,</span> <span class="p">{})</span>
+                <span class="k">except</span> <span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">JSONDecodeError</span><span class="p">,</span> <span class="ne">TypeError</span><span class="p">):</span>
+                    <span class="n">event_type</span> <span class="o">=</span> <span class="s2">&quot;message&quot;</span>
+                    <span class="n">data</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;raw&quot;</span><span class="p">:</span> <span class="n">raw_message</span><span class="p">}</span>
+
+                <span class="c1"># Format as SSE message</span>
+                <span class="k">yield</span> <span class="sa">f</span><span class="s2">&quot;event: </span><span class="si">{</span><span class="n">event_type</span><span class="si">}</span><span class="se">\n</span><span class="s2">data: </span><span class="si">{</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">data</span><span class="p">)</span><span class="si">}</span><span class="se">\n\n</span><span class="s2">&quot;</span>
+
+                <span class="c1"># ✅ Stop streaming after job_completed</span>
+                <span class="k">if</span> <span class="n">event_type</span> <span class="o">==</span> <span class="s2">&quot;job_completed&quot;</span><span class="p">:</span>
+                    <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[SSE] Job completed for </span><span class="si">{</span><span class="n">job_id</span><span class="si">}</span><span class="s2">, closing stream.&quot;</span><span class="p">)</span>
+                    <span class="k">break</span>
+
+        <span class="k">finally</span><span class="p">:</span>
+            <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[SSE] Closed Redis connection for </span><span class="si">{</span><span class="n">channel_name</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">StreamingResponse</span><span class="p">(</span><span class="n">event_generator</span><span class="p">(),</span> <span class="n">media_type</span><span class="o">=</span><span class="s2">&quot;text/event-stream&quot;</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+
+
+  </div>
+
+    </div>
+
+</div></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js"></script>
+        <script src="../../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
